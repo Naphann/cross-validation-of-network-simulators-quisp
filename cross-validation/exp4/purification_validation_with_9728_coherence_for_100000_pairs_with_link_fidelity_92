@@ -1,0 +1,2090 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2022 Andras Varga, OpenSim Ltd.
+Version: 6.0.1, build: 220831-e4f07d04b8, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+
+Setting up Cmdenv...
+
+Loading NED files from ./networks:  14
+Loading NED files from ./channels:  2
+Loading NED files from ./modules:  24
+Loading NED files from ./simulations:  0
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #0...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-0-20260331-02:26:45-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 4e-06s (0m 00s)  0% completed  (0% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #14149888   t=112.091848891776   Elapsed: 10.0001s (0m 10s)  11% completed  (0% total)
+     Speed:     ev/sec=1.41498e+06   simsec/sec=11.2091   ev/simsec=126235
+     Messages:  created: 3710551   present: 510   in FES: 446
+** Event #31759616   t=239.184221442204   Elapsed: 20.0002s (0m 20s)  23% completed  (0% total)
+     Speed:     ev/sec=1.76096e+06   simsec/sec=12.7091   ev/simsec=138558
+     Messages:  created: 8327522   present: 510   in FES: 382
+** Event #51384576   t=380.817609495036   Elapsed: 30.0003s (0m 30s)  38% completed  (1% total)
+     Speed:     ev/sec=1.96247e+06   simsec/sec=14.1632   ev/simsec=138562
+     Messages:  created: 13472781   present: 510   in FES: 312
+** Event #70851328   t=521.3219642587   Elapsed: 40.0007s (0m 40s)  52% completed  (1% total)
+     Speed:     ev/sec=1.9466e+06   simsec/sec=14.0499   ev/simsec=138549
+     Messages:  created: 18576957   present: 510   in FES: 242
+sim time: 550.354518740123
+sim time: 550.354518740123
+** Event #74909471   t=1000   Elapsed: 42.1868s (0m 42s)  100% completed  (3% total)
+     Speed:     ev/sec=1.85635e+06   simsec/sec=218.794   ev/simsec=8484.46
+     Messages:  created: 19636566   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74909471
+
+Calling finish() at end of Run #0...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00409128, 0.0110793, 0.00233645
+[INFO]	-0.0124557, 0.491045, -0.0171632, -0.00280365
+[INFO]	-0.0119728, 0.010898, -0.491959, -0.0196399
+[INFO]	0.00682962, -0.0049094, 0.0158014, 0.865025
+[INFO]	DM =               (0.468548,0)  (-0.00020453,-0.00672017)   (-0.00381483,0.00790319)      (0.245751,0.00156631)
+[INFO]	  (-0.00020453,0.00672017)               (0.034867,0) (-0.000228475,-0.00701528)  (-0.00241301,-0.00191677)
+[INFO]	 (-0.00381483,-0.00790319)  (-0.000228475,0.00701528)              (0.0326204,0)     (0.00225017,0.0011805)
+[INFO]	    (0.245751,-0.00156631)   (-0.00241301,0.00191677)    (0.00225017,-0.0011805)               (0.463965,0)
+[INFO]	Xerr = 0.0335152
+[INFO]	Zerr = 0.220505 or, 0.220505+0
+[INFO]	Yerr = 0.0339722
+alice<-->QuantumChannel{cost=0.0108166;distance=20km;fidelity=0.712007;bellpair_per_sec=182.364;}<-->bob; Fidelity=0.712007; Xerror=0.0335152; Zerror=0.220505; Yerror=0.0339722
+Closed file to write.
+BSA Statistics (raw):
+    562376 8160 8034 7950
+last BSM message that was sent 550.355959832008
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0124557, -0.0119728, 0.00682962
+[INFO]	0.00409128, 0.491045, 0.010898, -0.0049094
+[INFO]	0.0110793, -0.0171632, -0.491959, 0.0158014
+[INFO]	0.00233645, -0.00280365, -0.0196399, 0.865025
+[INFO]	DM =               (0.468548,0)   (-0.00381483,0.00790319)  (-0.00020453,-0.00672017)      (0.245751,0.00156631)
+[INFO]	 (-0.00381483,-0.00790319)              (0.0326204,0)  (-0.000228475,0.00701528)     (0.00225017,0.0011805)
+[INFO]	  (-0.00020453,0.00672017) (-0.000228475,-0.00701528)               (0.034867,0)  (-0.00241301,-0.00191677)
+[INFO]	    (0.245751,-0.00156631)    (0.00225017,-0.0011805)   (-0.00241301,0.00191677)               (0.463965,0)
+[INFO]	Xerr = 0.0335152
+[INFO]	Zerr = 0.220505 or, 0.220505+0
+[INFO]	Yerr = 0.0339722
+bob<-->QuantumChannel{cost=0.0108166;distance=20km;fidelity=0.712007;bellpair_per_sec=182.364;}<-->alice; Fidelity=0.712007; Xerror=0.0335152; Zerror=0.220505; Yerror=0.0339722
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #1...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-1-20260331-02:27:27-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 1e-06s (0m 00s)  0% completed  (3% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #13471488   t=107.323332546311   Elapsed: 10s (0m 10s)  10% completed  (3% total)
+     Speed:     ev/sec=1.34715e+06   simsec/sec=10.7323   ev/simsec=125522
+     Messages:  created: 3533256   present: 511   in FES: 451
+** Event #31151104   t=234.88347824161   Elapsed: 20.0003s (0m 20s)  23% completed  (4% total)
+     Speed:     ev/sec=1.76792e+06   simsec/sec=12.7557   ev/simsec=138598
+     Messages:  created: 8168367   present: 510   in FES: 386
+** Event #49246464   t=365.422037232827   Elapsed: 30.0003s (0m 30s)  36% completed  (4% total)
+     Speed:     ev/sec=1.80953e+06   simsec/sec=13.0538   ev/simsec=138621
+     Messages:  created: 12912883   present: 508   in FES: 320
+** Event #63456768   t=467.929684353155   Elapsed: 40.0003s (0m 40s)  46% completed  (4% total)
+     Speed:     ev/sec=1.42102e+06   simsec/sec=10.2507   ev/simsec=138627
+     Messages:  created: 16638686   present: 511   in FES: 271
+sim time: 551.078323640229
+sim time: 551.078323640229
+** Event #75007414   t=1000   Elapsed: 45.8205s (0m 45s)  100% completed  (6% total)
+     Speed:     ev/sec=1.98459e+06   simsec/sec=91.4071   ev/simsec=21711.5
+     Messages:  created: 19663384   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75007414
+
+Calling finish() at end of Run #1...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00948938, 0.00134662, 0.0288863
+[INFO]	0.0127429, 0.489923, -0.00457358, 0.00398334
+[INFO]	-0.00296256, 0.00181258, -0.492773, 0.00698799
+[INFO]	0.0219536, -0.00358873, -0.01163, 0.870767
+[INFO]	DM =              (0.480402,0)   (0.00147516,0.00257085)  (0.00418156,-0.00100636)     (0.245674,0.00069025)
+[INFO]	 (0.00147516,-0.00257085)             (0.0305751,0) (-0.00071249,-0.00159654)   (0.00218989,0.00248764)
+[INFO]	  (0.00418156,0.00100636)  (-0.00071249,0.00159654)             (0.0340414,0)  (0.00326953,-0.00324416)
+[INFO]	   (0.245674,-0.00069025)  (0.00218989,-0.00248764)   (0.00326953,0.00324416)              (0.454982,0)
+[INFO]	Xerr = 0.0315957
+[INFO]	Zerr = 0.222018 or, 0.222018+0
+[INFO]	Yerr = 0.0330207
+alice<-->QuantumChannel{cost=0.0107897;distance=20km;fidelity=0.713366;bellpair_per_sec=182.123;}<-->bob; Fidelity=0.713366; Xerror=0.0315957; Zerror=0.222018; Yerror=0.0330207
+Closed file to write.
+BSA Statistics (raw):
+    561305 8083 8057 8187
+last BSM message that was sent 551.080917596622
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.0127429, -0.00296256, 0.0219536
+[INFO]	0.00948938, 0.489923, 0.00181258, -0.00358873
+[INFO]	0.00134662, -0.00457358, -0.492773, -0.01163
+[INFO]	0.0288863, 0.00398334, 0.00698799, 0.870767
+[INFO]	DM =              (0.480402,0)  (0.00418156,-0.00100636)   (0.00147516,0.00257085)     (0.245674,0.00069025)
+[INFO]	  (0.00418156,0.00100636)             (0.0340414,0)  (-0.00071249,0.00159654)  (0.00326953,-0.00324416)
+[INFO]	 (0.00147516,-0.00257085) (-0.00071249,-0.00159654)             (0.0305751,0)   (0.00218989,0.00248764)
+[INFO]	   (0.245674,-0.00069025)   (0.00326953,0.00324416)  (0.00218989,-0.00248764)              (0.454982,0)
+[INFO]	Xerr = 0.0315957
+[INFO]	Zerr = 0.222018 or, 0.222018+0
+[INFO]	Yerr = 0.0330207
+bob<-->QuantumChannel{cost=0.0107897;distance=20km;fidelity=0.713366;bellpair_per_sec=182.123;}<-->alice; Fidelity=0.713366; Xerror=0.0315957; Zerror=0.222018; Yerror=0.0330207
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #2...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-2-20260331-02:28:13-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 2e-06s (0m 00s)  0% completed  (6% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #14044928   t=111.337879039544   Elapsed: 10.0001s (0m 10s)  11% completed  (7% total)
+     Speed:     ev/sec=1.40448e+06   simsec/sec=11.1337   ev/simsec=126147
+     Messages:  created: 3683209   present: 510   in FES: 447
+** Event #25607680   t=194.731981351363   Elapsed: 20.0001s (0m 20s)  19% completed  (7% total)
+     Speed:     ev/sec=1.15627e+06   simsec/sec=8.33936   ev/simsec=138652
+     Messages:  created: 6714336   present: 511   in FES: 407
+** Event #43569664   t=324.296181214402   Elapsed: 30.0002s (0m 30s)  32% completed  (7% total)
+     Speed:     ev/sec=1.79619e+06   simsec/sec=12.9564   ev/simsec=138634
+     Messages:  created: 11423199   present: 510   in FES: 340
+** Event #62368512   t=459.913181885818   Elapsed: 40.0012s (0m 40s)  45% completed  (8% total)
+     Speed:     ev/sec=1.8797e+06   simsec/sec=13.5604   ev/simsec=138617
+     Messages:  created: 16352156   present: 510   in FES: 272
+sim time: 550.281315264365
+sim time: 550.281315264365
+** Event #74918964   t=1000   Elapsed: 47.6196s (0m 47s)  100% completed  (10% total)
+     Speed:     ev/sec=1.64737e+06   simsec/sec=70.8873   ev/simsec=23239.2
+     Messages:  created: 19639250   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74918964
+
+Calling finish() at end of Run #2...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.0137084, -0.00550989, -0.00329328
+[INFO]	0.00564466, 0.493056, 0.00593525, 0.00279506
+[INFO]	0.00605185, -0.00868135, -0.488212, -0.0183666
+[INFO]	-0.00204717, 0.00572884, 0.0150457, 0.868803
+[INFO]	DM =              (0.465866,0)  (0.00485932,-0.00238395)   (0.00210993,0.00307869)    (0.245317,0.000686524)
+[INFO]	  (0.00485932,0.00238395)             (0.0331108,0)   (0.00121093,0.00365415) (0.000712399,-0.00610462)
+[INFO]	 (0.00210993,-0.00307869)  (0.00121093,-0.00365415)             (0.0324878,0)    (0.0019949,0.00513889)
+[INFO]	  (0.245317,-0.000686524)  (0.000712399,0.00610462)   (0.0019949,-0.00513889)              (0.468536,0)
+[INFO]	Xerr = 0.0340102
+[INFO]	Zerr = 0.221884 or, 0.221884+0
+[INFO]	Yerr = 0.0315884
+alice<-->QuantumChannel{cost=0.0107997;distance=20km;fidelity=0.712518;bellpair_per_sec=182.388;}<-->bob; Fidelity=0.712518; Xerror=0.0340102; Zerror=0.221884; Yerror=0.0315884
+Closed file to write.
+BSA Statistics (raw):
+    561350 7973 8009 8184
+last BSM message that was sent 550.283140646086
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00564466, 0.00605185, -0.00204717
+[INFO]	0.0137084, 0.493056, -0.00868135, 0.00572884
+[INFO]	-0.00550989, 0.00593525, -0.488212, 0.0150457
+[INFO]	-0.00329328, 0.00279506, -0.0183666, 0.868803
+[INFO]	DM =              (0.465866,0)   (0.00210993,0.00307869)  (0.00485932,-0.00238395)    (0.245317,0.000686524)
+[INFO]	 (0.00210993,-0.00307869)             (0.0324878,0)  (0.00121093,-0.00365415)    (0.0019949,0.00513889)
+[INFO]	  (0.00485932,0.00238395)   (0.00121093,0.00365415)             (0.0331108,0) (0.000712399,-0.00610462)
+[INFO]	  (0.245317,-0.000686524)   (0.0019949,-0.00513889)  (0.000712399,0.00610462)              (0.468536,0)
+[INFO]	Xerr = 0.0340102
+[INFO]	Zerr = 0.221884 or, 0.221884+0
+[INFO]	Yerr = 0.0315884
+bob<-->QuantumChannel{cost=0.0107997;distance=20km;fidelity=0.712518;bellpair_per_sec=182.388;}<-->alice; Fidelity=0.712518; Xerror=0.0340102; Zerror=0.221884; Yerror=0.0315884
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #3...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-3-20260331-02:29:00-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (10% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #15672832   t=123.203586298175   Elapsed: 10s (0m 10s)  12% completed  (10% total)
+     Speed:     ev/sec=1.56728e+06   simsec/sec=12.3203   ev/simsec=127211
+     Messages:  created: 4110237   present: 509   in FES: 441
+** Event #31504640   t=237.534285768338   Elapsed: 20s (0m 20s)  23% completed  (10% total)
+     Speed:     ev/sec=1.58318e+06   simsec/sec=11.4331   ev/simsec=138474
+     Messages:  created: 8262035   present: 512   in FES: 386
+** Event #49788672   t=369.491725953526   Elapsed: 30s (0m 30s)  36% completed  (11% total)
+     Speed:     ev/sec=1.8284e+06   simsec/sec=13.1957   ev/simsec=138560
+     Messages:  created: 13056435   present: 510   in FES: 318
+** Event #69015552   t=508.262372773076   Elapsed: 40.0008s (0m 40s)  50% completed  (11% total)
+     Speed:     ev/sec=1.92254e+06   simsec/sec=13.876   ev/simsec=138551
+     Messages:  created: 18097983   present: 510   in FES: 248
+sim time: 552.068435354683
+sim time: 552.068435354683
+** Event #75117327   t=1000   Elapsed: 43.4814s (0m 43s)  100% completed  (13% total)
+     Speed:     ev/sec=1.75307e+06   simsec/sec=141.187   ev/simsec=12416.6
+     Messages:  created: 19693274   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75117327
+
+Calling finish() at end of Run #3...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00186783, 0.00354642, -0.00432744
+[INFO]	0.00168994, 0.504047, 0.00858098, 0.0044501
+[INFO]	0.00409203, 0.00959039, -0.495499, 0.00250806
+[INFO]	-0.00216372, 0.0144797, -0.00951014, 0.86621
+[INFO]	DM =                 (0.46493,0)     (0.00315297,0.00149093)    (0.00153501,-0.00165002)      (0.249886,-0.00454284)
+[INFO]	   (0.00315297,-0.00149093)               (0.0339885,0)   (0.00213705,-0.000252354) (-0.000690039,-0.000395991)
+[INFO]	    (0.00153501,0.00165002)    (0.00213705,0.000252354)               (0.0329066,0)   (-0.00408689,-0.00326414)
+[INFO]	      (0.249886,0.00454284)  (-0.000690039,0.000395991)    (-0.00408689,0.00326414)                (0.468175,0)
+[INFO]	Xerr = 0.0355846
+[INFO]	Zerr = 0.216666 or, 0.216666+0
+[INFO]	Yerr = 0.0313105
+alice<-->QuantumChannel{cost=0.0107166;distance=20km;fidelity=0.716439;bellpair_per_sec=181.796;}<-->bob; Fidelity=0.716439; Xerror=0.0355846; Zerror=0.216666; Yerror=0.0313105
+Closed file to write.
+BSA Statistics (raw):
+    562005 7959 8054 7974
+last BSM message that was sent 552.074872160436
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00168994, 0.00409203, -0.00216372
+[INFO]	-0.00186783, 0.504047, 0.00959039, 0.0144797
+[INFO]	0.00354642, 0.00858098, -0.495499, -0.00951014
+[INFO]	-0.00432744, 0.0044501, 0.00250806, 0.86621
+[INFO]	DM =                 (0.46493,0)    (0.00153501,-0.00165002)     (0.00315297,0.00149093)      (0.249886,-0.00454284)
+[INFO]	    (0.00153501,0.00165002)               (0.0329066,0)    (0.00213705,0.000252354)   (-0.00408689,-0.00326414)
+[INFO]	   (0.00315297,-0.00149093)   (0.00213705,-0.000252354)               (0.0339885,0) (-0.000690039,-0.000395991)
+[INFO]	      (0.249886,0.00454284)    (-0.00408689,0.00326414)  (-0.000690039,0.000395991)                (0.468175,0)
+[INFO]	Xerr = 0.0355846
+[INFO]	Zerr = 0.216666 or, 0.216666+0
+[INFO]	Yerr = 0.0313105
+bob<-->QuantumChannel{cost=0.0107166;distance=20km;fidelity=0.716439;bellpair_per_sec=181.796;}<-->alice; Fidelity=0.716439; Xerror=0.0355846; Zerror=0.216666; Yerror=0.0313105
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #4...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-4-20260331-02:29:44-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (13% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #17253376   t=134.541672049978   Elapsed: 10.0029s (0m 10s)  13% completed  (13% total)
+     Speed:     ev/sec=1.72484e+06   simsec/sec=13.4503   ev/simsec=128238
+     Messages:  created: 4524927   present: 510   in FES: 436
+** Event #32013056   t=241.130728415003   Elapsed: 20.006s (0m 20s)  24% completed  (14% total)
+     Speed:     ev/sec=1.47551e+06   simsec/sec=10.6556   ev/simsec=138473
+     Messages:  created: 8395491   present: 512   in FES: 384
+** Event #47257344   t=351.140895589018   Elapsed: 30.006s (0m 30s)  35% completed  (14% total)
+     Speed:     ev/sec=1.52443e+06   simsec/sec=11.001   ev/simsec=138572
+     Messages:  created: 12392477   present: 509   in FES: 325
+** Event #65547776   t=483.1815330137   Elapsed: 40.006s (0m 40s)  48% completed  (14% total)
+     Speed:     ev/sec=1.82903e+06   simsec/sec=13.204   ev/simsec=138521
+     Messages:  created: 17188533   present: 512   in FES: 263
+sim time: 552.933657446437
+sim time: 552.933657446437
+** Event #75244187   t=1000   Elapsed: 45.9415s (0m 45s)  100% completed  (16% total)
+     Speed:     ev/sec=1.63365e+06   simsec/sec=87.0256   ev/simsec=18772.1
+     Messages:  created: 19726566   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75244187
+
+Calling finish() at end of Run #4...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00383894, 0.010745, -0.00414863
+[INFO]	-0.0259798, 0.493795, 0.0172893, -0.0121984
+[INFO]	-0.000716332, 0.00407646, -0.496418, 0.00563329
+[INFO]	-0.00595238, -0.000720721, 0.0116404, 0.869769
+[INFO]	DM =              (0.464917,0) (0.000779556,-0.00559635) (-0.00954456,-0.00122924)    (0.247553,-0.00534143)
+[INFO]	 (0.000779556,0.00559635)             (0.0321068,0)  (-0.000655785,0.0033032)  (-0.00344535,0.00158741)
+[INFO]	 (-0.00954456,0.00122924) (-0.000655785,-0.0033032)             (0.0330087,0)  (0.00113992,0.000223854)
+[INFO]	    (0.247553,0.00534143) (-0.00344535,-0.00158741) (0.00113992,-0.000223854)              (0.469968,0)
+[INFO]	Xerr = 0.0319019
+[INFO]	Zerr = 0.219889 or, 0.219889+0
+[INFO]	Yerr = 0.0332135
+alice<-->QuantumChannel{cost=0.0107769;distance=20km;fidelity=0.714996;bellpair_per_sec=181.51;}<-->bob; Fidelity=0.714996; Xerror=0.0319019; Zerror=0.219889; Yerror=0.0332135
+Closed file to write.
+BSA Statistics (raw):
+    563105 8319 8080 7824
+last BSM message that was sent 552.93625139283
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0259798, -0.000716332, -0.00595238
+[INFO]	0.00383894, 0.493795, 0.00407646, -0.000720721
+[INFO]	0.010745, 0.0172893, -0.496418, 0.0116404
+[INFO]	-0.00414863, -0.0121984, 0.00563329, 0.869769
+[INFO]	DM =              (0.464917,0) (-0.00954456,-0.00122924) (0.000779556,-0.00559635)    (0.247553,-0.00534143)
+[INFO]	 (-0.00954456,0.00122924)             (0.0330087,0) (-0.000655785,-0.0033032)  (0.00113992,0.000223854)
+[INFO]	 (0.000779556,0.00559635)  (-0.000655785,0.0033032)             (0.0321068,0)  (-0.00344535,0.00158741)
+[INFO]	    (0.247553,0.00534143) (0.00113992,-0.000223854) (-0.00344535,-0.00158741)              (0.469968,0)
+[INFO]	Xerr = 0.0319019
+[INFO]	Zerr = 0.219889 or, 0.219889+0
+[INFO]	Yerr = 0.0332135
+bob<-->QuantumChannel{cost=0.0107769;distance=20km;fidelity=0.714996;bellpair_per_sec=181.51;}<-->alice; Fidelity=0.714996; Xerror=0.0319019; Zerror=0.219889; Yerror=0.0332135
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #5...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-5-20260331-02:30:30-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (16% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18629888   t=144.538979003977   Elapsed: 10s (0m 10s)  14% completed  (17% total)
+     Speed:     ev/sec=1.86299e+06   simsec/sec=14.4539   ev/simsec=128892
+     Messages:  created: 4885649   present: 510   in FES: 430
+** Event #34435328   t=258.587132466221   Elapsed: 20.0002s (0m 20s)  25% completed  (17% total)
+     Speed:     ev/sec=1.58051e+06   simsec/sec=11.4046   ev/simsec=138586
+     Messages:  created: 9029739   present: 514   in FES: 377
+** Event #53204224   t=393.934364206765   Elapsed: 30.0003s (0m 30s)  39% completed  (17% total)
+     Speed:     ev/sec=1.87689e+06   simsec/sec=13.5347   ev/simsec=138672
+     Messages:  created: 13950229   present: 510   in FES: 308
+** Event #72004096   t=529.521389828973   Elapsed: 40.007s (0m 40s)  52% completed  (18% total)
+     Speed:     ev/sec=1.87871e+06   simsec/sec=13.5495   ev/simsec=138655
+     Messages:  created: 18878495   present: 508   in FES: 238
+sim time: 548.893846287487
+sim time: 548.893846287487
+** Event #74713421   t=1000   Elapsed: 41.4275s (0m 41s)  100% completed  (20% total)
+     Speed:     ev/sec=1.90734e+06   simsec/sec=331.093   ev/simsec=5760.75
+     Messages:  created: 19584834   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74713421
+
+Calling finish() at end of Run #5...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.000719036, -0.00425455, 0.00606719
+[INFO]	-0.000719036, 0.506381, 0.00372152, 0.0244164
+[INFO]	0.0136689, 0.0130427, -0.484385, 0.0110268
+[INFO]	0.00950829, 0.000448551, 0.00134156, 0.8629
+[INFO]	DM =                (0.469619,0)  (-6.76213e-05,0.000728247)    (0.00592435,-0.00617391)      (0.247692,-0.00419106)
+[INFO]	(-6.76213e-05,-0.000728247)               (0.0351354,0)     (0.00549914,-0.0023303)  (-0.00628386,-0.000660529)
+[INFO]	    (0.00592435,0.00617391)      (0.00549914,0.0023303)               (0.0334148,0)   (-0.000291897,0.00139903)
+[INFO]	      (0.247692,0.00419106)   (-0.00628386,0.000660529)  (-0.000291897,-0.00139903)                (0.461831,0)
+[INFO]	Xerr = 0.0397742
+[INFO]	Zerr = 0.218033 or, 0.218033+0
+[INFO]	Yerr = 0.028776
+alice<-->QuantumChannel{cost=0.0107453;distance=20km;fidelity=0.713416;bellpair_per_sec=182.851;}<-->bob; Fidelity=0.713416; Xerror=0.0397742; Zerror=0.218033; Yerror=0.028776
+Closed file to write.
+BSA Statistics (raw):
+    560755 7852 7821 7920
+last BSM message that was sent 548.896248090962
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.000719036, 0.0136689, 0.00950829
+[INFO]	-0.000719036, 0.506381, 0.0130427, 0.000448551
+[INFO]	-0.00425455, 0.00372152, -0.484385, 0.00134156
+[INFO]	0.00606719, 0.0244164, 0.0110268, 0.8629
+[INFO]	DM =                (0.469619,0)    (0.00592435,-0.00617391)  (-6.76213e-05,0.000728247)      (0.247692,-0.00419106)
+[INFO]	    (0.00592435,0.00617391)               (0.0334148,0)      (0.00549914,0.0023303)   (-0.000291897,0.00139903)
+[INFO]	(-6.76213e-05,-0.000728247)     (0.00549914,-0.0023303)               (0.0351354,0)  (-0.00628386,-0.000660529)
+[INFO]	      (0.247692,0.00419106)  (-0.000291897,-0.00139903)   (-0.00628386,0.000660529)                (0.461831,0)
+[INFO]	Xerr = 0.0397742
+[INFO]	Zerr = 0.218033 or, 0.218033+0
+[INFO]	Yerr = 0.028776
+bob<-->QuantumChannel{cost=0.0107453;distance=20km;fidelity=0.713416;bellpair_per_sec=182.851;}<-->alice; Fidelity=0.713416; Xerror=0.0397742; Zerror=0.218033; Yerror=0.028776
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #6...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-6-20260331-02:31:11-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (20% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18575616   t=144.039599095095   Elapsed: 10.0001s (0m 10s)  14% completed  (20% total)
+     Speed:     ev/sec=1.85755e+06   simsec/sec=14.4039   ev/simsec=128962
+     Messages:  created: 4870229   present: 510   in FES: 430
+** Event #35402240   t=265.478541723209   Elapsed: 20.0011s (0m 20s)  26% completed  (20% total)
+     Speed:     ev/sec=1.68249e+06   simsec/sec=12.1426   ev/simsec=138560
+     Messages:  created: 9282139   present: 508   in FES: 370
+** Event #50385920   t=373.504543692497   Elapsed: 30.0014s (0m 30s)  37% completed  (21% total)
+     Speed:     ev/sec=1.49833e+06   simsec/sec=10.8023   ev/simsec=138704
+     Messages:  created: 13210685   present: 510   in FES: 316
+** Event #68531712   t=504.513564112437   Elapsed: 40.0014s (0m 40s)  50% completed  (21% total)
+     Speed:     ev/sec=1.81458e+06   simsec/sec=13.1009   ev/simsec=138508
+     Messages:  created: 17968975   present: 510   in FES: 250
+sim time: 550.073605973007
+sim time: 550.073605973007
+** Event #74870144   t=1000   Elapsed: 43.6012s (0m 43s)  100% completed  (23% total)
+     Speed:     ev/sec=1.76079e+06   simsec/sec=137.577   ev/simsec=12798.5
+     Messages:  created: 19626732   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74870144
+
+Calling finish() at end of Run #6...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00544267, -0.00462501, -0.00116227
+[INFO]	0.000725689, 0.505806, -0.00568283, 0.0023235
+[INFO]	-9.06865e-05, -0.0143062, -0.500499, 0.0108225
+[INFO]	-0.00098346, 0.00135882, 0.0217253, 0.871793
+[INFO]	DM =              (0.467412,0)  (0.00170037,-0.00427507) (0.000762298,-0.00268296)     (0.251576,0.00499724)
+[INFO]	  (0.00170037,0.00427507)             (0.0320966,0)   (0.00132668,0.00215583)  (-0.000399453,0.0027283)
+[INFO]	 (0.000762298,0.00268296)  (0.00132668,-0.00215583)             (0.0320072,0)   (0.00102096,0.00658758)
+[INFO]	   (0.251576,-0.00499724) (-0.000399453,-0.0027283)  (0.00102096,-0.00658758)              (0.468485,0)
+[INFO]	Xerr = 0.0333785
+[INFO]	Zerr = 0.216372 or, 0.216372+0
+[INFO]	Yerr = 0.0307252
+alice<-->QuantumChannel{cost=0.0105864;distance=20km;fidelity=0.719524;bellpair_per_sec=182.457;}<-->bob; Fidelity=0.719524; Xerror=0.0333785; Zerror=0.216372; Yerror=0.0307252
+Closed file to write.
+BSA Statistics (raw):
+    561240 7805 8097 7922
+last BSM message that was sent 550.076007781482
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.000725689, -9.06865e-05, -0.00098346
+[INFO]	0.00544267, 0.505806, -0.0143062, 0.00135882
+[INFO]	-0.00462501, -0.00568283, -0.500499, 0.0217253
+[INFO]	-0.00116227, 0.0023235, 0.0108225, 0.871793
+[INFO]	DM =              (0.467412,0) (0.000762298,-0.00268296)  (0.00170037,-0.00427507)     (0.251576,0.00499724)
+[INFO]	 (0.000762298,0.00268296)             (0.0320072,0)  (0.00132668,-0.00215583)   (0.00102096,0.00658758)
+[INFO]	  (0.00170037,0.00427507)   (0.00132668,0.00215583)             (0.0320966,0)  (-0.000399453,0.0027283)
+[INFO]	   (0.251576,-0.00499724)  (0.00102096,-0.00658758) (-0.000399453,-0.0027283)              (0.468485,0)
+[INFO]	Xerr = 0.0333785
+[INFO]	Zerr = 0.216372 or, 0.216372+0
+[INFO]	Yerr = 0.0307252
+bob<-->QuantumChannel{cost=0.0105864;distance=20km;fidelity=0.719524;bellpair_per_sec=182.457;}<-->alice; Fidelity=0.719524; Xerror=0.0333785; Zerror=0.216372; Yerror=0.0307252
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #7...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-7-20260331-02:31:55-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (23% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18146560   t=141.0224705282   Elapsed: 10.0003s (0m 10s)  14% completed  (23% total)
+     Speed:     ev/sec=1.81461e+06   simsec/sec=14.1019   ev/simsec=128679
+     Messages:  created: 4759154   present: 511   in FES: 433
+** Event #35765504   t=268.359055857406   Elapsed: 20.0023s (0m 20s)  26% completed  (24% total)
+     Speed:     ev/sec=1.76154e+06   simsec/sec=12.7311   ev/simsec=138365
+     Messages:  created: 9380047   present: 510   in FES: 368
+** Event #54653440   t=404.789107867339   Elapsed: 30.0023s (0m 30s)  40% completed  (24% total)
+     Speed:     ev/sec=1.88878e+06   simsec/sec=13.6429   ev/simsec=138444
+     Messages:  created: 14332775   present: 510   in FES: 300
+** Event #73439488   t=540.289668929447   Elapsed: 40.0024s (0m 40s)  54% completed  (25% total)
+     Speed:     ev/sec=1.8786e+06   simsec/sec=13.55   ev/simsec=138642
+     Messages:  created: 19257517   present: 510   in FES: 232
+sim time: 551.334254226005
+sim time: 551.334254226005
+** Event #75006047   t=1000   Elapsed: 40.859s (0m 40s)  100% completed  (26% total)
+     Speed:     ev/sec=1.82887e+06   simsec/sec=536.423   ev/simsec=3409.38
+     Messages:  created: 19663728   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75006047
+
+Calling finish() at end of Run #7...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.0137235, -0.0077299, 0
+[INFO]	0.0173589, 0.491048, 0.0169583, 0.012566
+[INFO]	0.00453132, 0.00387004, -0.494269, -0.00726783
+[INFO]	-0.00360231, 0.00846847, 0.00392367, 0.872118
+[INFO]	DM =               (0.467129,0)     (0.005548,0.000951558)   (0.00748123,0.000684128)     (0.246329,-0.00520709)
+[INFO]	   (0.005548,-0.000951558)              (0.0310699,0)  (-0.000805329,0.00327207)   (0.00119822,-0.00294979)
+[INFO]	 (0.00748123,-0.000684128) (-0.000805329,-0.00327207)               (0.032871,0)    (0.00131377,0.00291339)
+[INFO]	     (0.246329,0.00520709)    (0.00119822,0.00294979)   (0.00131377,-0.00291339)                (0.46893,0)
+[INFO]	Xerr = 0.0311651
+[INFO]	Zerr = 0.2217 or, 0.2217+0
+[INFO]	Yerr = 0.0327758
+alice<-->QuantumChannel{cost=0.0107647;distance=20km;fidelity=0.714359;bellpair_per_sec=182.039;}<-->bob; Fidelity=0.714359; Xerror=0.0311651; Zerror=0.2217; Yerror=0.0327758
+Closed file to write.
+BSA Statistics (raw):
+    561560 7955 8069 8008
+last BSM message that was sent 551.336079600726
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.0173589, 0.00453132, -0.00360231
+[INFO]	0.0137235, 0.491048, 0.00387004, 0.00846847
+[INFO]	-0.0077299, 0.0169583, -0.494269, 0.00392367
+[INFO]	0, 0.012566, -0.00726783, 0.872118
+[INFO]	DM =               (0.467129,0)   (0.00748123,0.000684128)     (0.005548,0.000951558)     (0.246329,-0.00520709)
+[INFO]	 (0.00748123,-0.000684128)               (0.032871,0) (-0.000805329,-0.00327207)    (0.00131377,0.00291339)
+[INFO]	   (0.005548,-0.000951558)  (-0.000805329,0.00327207)              (0.0310699,0)   (0.00119822,-0.00294979)
+[INFO]	     (0.246329,0.00520709)   (0.00131377,-0.00291339)    (0.00119822,0.00294979)                (0.46893,0)
+[INFO]	Xerr = 0.0311651
+[INFO]	Zerr = 0.2217 or, 0.2217+0
+[INFO]	Yerr = 0.0327758
+bob<-->QuantumChannel{cost=0.0107647;distance=20km;fidelity=0.714359;bellpair_per_sec=182.039;}<-->alice; Fidelity=0.714359; Xerror=0.0311651; Zerror=0.2217; Yerror=0.0327758
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #8...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-8-20260331-02:32:36-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (26% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #16309248   t=127.748159071711   Elapsed: 10.0001s (0m 10s)  12% completed  (27% total)
+     Speed:     ev/sec=1.63091e+06   simsec/sec=12.7747   ev/simsec=127667
+     Messages:  created: 4277159   present: 511   in FES: 440
+** Event #34000128   t=255.397267043044   Elapsed: 20.0003s (0m 20s)  25% completed  (27% total)
+     Speed:     ev/sec=1.76906e+06   simsec/sec=12.7647   ev/simsec=138590
+     Messages:  created: 8915283   present: 512   in FES: 378
+** Event #52934912   t=391.975080318919   Elapsed: 30.0003s (0m 30s)  39% completed  (27% total)
+     Speed:     ev/sec=1.89348e+06   simsec/sec=13.6578   ev/simsec=138637
+     Messages:  created: 13879849   present: 510   in FES: 307
+** Event #71727616   t=527.55605335521   Elapsed: 40.0004s (0m 40s)  52% completed  (28% total)
+     Speed:     ev/sec=1.87926e+06   simsec/sec=13.558   ev/simsec=138609
+     Messages:  created: 18806791   present: 512   in FES: 242
+sim time: 550.456355633663
+sim time: 550.456355633663
+** Event #74925345   t=1000   Elapsed: 41.7807s (0m 41s)  100% completed  (30% total)
+     Speed:     ev/sec=1.79613e+06   simsec/sec=265.215   ev/simsec=6772.34
+     Messages:  created: 19641266   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74925345
+
+Calling finish() at end of Run #8...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.0120656, 0.00582698, 0.00370337
+[INFO]	-0.0063029, 0.515577, -0.0192868, -0.00576906
+[INFO]	0.00869565, -0.0158758, -0.497087, 0.00164264
+[INFO]	-0.0020775, -0.00179501, 0.0034439, 0.86704
+[INFO]	DM =              (0.467166,0)  (0.00256764,-0.00231772) (-0.00301799,-0.00258457)     (0.253166,0.00879065)
+[INFO]	  (0.00256764,0.00231772)             (0.0317948,0) (0.00462266,-0.000852731) (-0.00013346,-0.00176325)
+[INFO]	 (-0.00301799,0.00258457)  (0.00462266,0.000852731)             (0.0346852,0) (0.00346514,-0.000595771)
+[INFO]	   (0.253166,-0.00879065)  (-0.00013346,0.00176325)  (0.00346514,0.000595771)              (0.466354,0)
+[INFO]	Xerr = 0.0378627
+[INFO]	Zerr = 0.213594 or, 0.213594+0
+[INFO]	Yerr = 0.0286173
+alice<-->QuantumChannel{cost=0.010582;distance=20km;fidelity=0.719926;bellpair_per_sec=182.33;}<-->bob; Fidelity=0.719926; Xerror=0.0378627; Zerror=0.213594; Yerror=0.0286173
+Closed file to write.
+BSA Statistics (raw):
+    561788 8012 7955 7853
+last BSM message that was sent 550.461831732826
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0063029, 0.00869565, -0.0020775
+[INFO]	0.0120656, 0.515577, -0.0158758, -0.00179501
+[INFO]	0.00582698, -0.0192868, -0.497087, 0.0034439
+[INFO]	0.00370337, -0.00576906, 0.00164264, 0.86704
+[INFO]	DM =              (0.467166,0) (-0.00301799,-0.00258457)  (0.00256764,-0.00231772)     (0.253166,0.00879065)
+[INFO]	 (-0.00301799,0.00258457)             (0.0346852,0)  (0.00462266,0.000852731) (0.00346514,-0.000595771)
+[INFO]	  (0.00256764,0.00231772) (0.00462266,-0.000852731)             (0.0317948,0) (-0.00013346,-0.00176325)
+[INFO]	   (0.253166,-0.00879065)  (0.00346514,0.000595771)  (-0.00013346,0.00176325)              (0.466354,0)
+[INFO]	Xerr = 0.0378627
+[INFO]	Zerr = 0.213594 or, 0.213594+0
+[INFO]	Yerr = 0.0286173
+bob<-->QuantumChannel{cost=0.010582;distance=20km;fidelity=0.719926;bellpair_per_sec=182.33;}<-->alice; Fidelity=0.719926; Xerror=0.0378627; Zerror=0.213594; Yerror=0.0286173
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #9...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-9-20260331-02:33:18-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (30% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18107136   t=140.641546612265   Elapsed: 10.0001s (0m 10s)  14% completed  (30% total)
+     Speed:     ev/sec=1.8107e+06   simsec/sec=14.0641   ev/simsec=128747
+     Messages:  created: 4747567   present: 510   in FES: 432
+** Event #36770048   t=275.453368014802   Elapsed: 20.0015s (0m 20s)  27% completed  (30% total)
+     Speed:     ev/sec=1.86603e+06   simsec/sec=13.4793   ev/simsec=138437
+     Messages:  created: 9641181   present: 510   in FES: 365
+** Event #53090560   t=393.204987127037   Elapsed: 30.0016s (0m 30s)  39% completed  (31% total)
+     Speed:     ev/sec=1.63203e+06   simsec/sec=11.775   ev/simsec=138601
+     Messages:  created: 13920725   present: 510   in FES: 306
+** Event #71514880   t=526.046287290025   Elapsed: 40.0016s (0m 40s)  52% completed  (31% total)
+     Speed:     ev/sec=1.84242e+06   simsec/sec=13.2841   ev/simsec=138694
+     Messages:  created: 18750943   present: 509   in FES: 239
+sim time: 549.967351162353
+sim time: 549.967351162353
+** Event #74862070   t=1000   Elapsed: 41.9305s (0m 41s)  100% completed  (33% total)
+     Speed:     ev/sec=1.73526e+06   simsec/sec=245.528   ev/simsec=7067.45
+     Messages:  created: 19624218   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74862070
+
+Calling finish() at end of Run #9...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00656062, 0.000628536, -0.000359131
+[INFO]	0.00512267, 0.501213, -0.00760143, 0.00744642
+[INFO]	-0.0162521, -0.013706, -0.498429, -0.00653478
+[INFO]	-0.00448914, 0.00662135, -0.0105397, 0.861196
+[INFO]	DM =               (0.464087,0)   (1.51822e-05,0.00247779)    (0.00314227,0.00569673)       (0.24991,0.00532686)
+[INFO]	 (1.51822e-05,-0.00247779)              (0.0336685,0)   (0.000696151,0.00152614)  (-0.000580937,0.00242934)
+[INFO]	  (0.00314227,-0.00569673)  (0.000696151,-0.00152614)              (0.0357335,0)  (-0.00329549,-0.00279206)
+[INFO]	     (0.24991,-0.00532686) (-0.000580937,-0.00242934)   (-0.00329549,0.00279206)               (0.466511,0)
+[INFO]	Xerr = 0.0353972
+[INFO]	Zerr = 0.215388 or, 0.215388+0
+[INFO]	Yerr = 0.0340049
+alice<-->QuantumChannel{cost=0.0107124;distance=20km;fidelity=0.715209;bellpair_per_sec=182.493;}<-->bob; Fidelity=0.715209; Xerror=0.0353972; Zerror=0.215388; Yerror=0.0340049
+Closed file to write.
+BSA Statistics (raw):
+    561586 7876 8007 8023
+last BSM message that was sent 549.967831536648
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00512267, -0.0162521, -0.00448914
+[INFO]	-0.00656062, 0.501213, -0.013706, 0.00662135
+[INFO]	0.000628536, -0.00760143, -0.498429, -0.0105397
+[INFO]	-0.000359131, 0.00744642, -0.00653478, 0.861196
+[INFO]	DM =               (0.464087,0)    (0.00314227,0.00569673)   (1.51822e-05,0.00247779)       (0.24991,0.00532686)
+[INFO]	  (0.00314227,-0.00569673)              (0.0357335,0)  (0.000696151,-0.00152614)  (-0.00329549,-0.00279206)
+[INFO]	 (1.51822e-05,-0.00247779)   (0.000696151,0.00152614)              (0.0336685,0)  (-0.000580937,0.00242934)
+[INFO]	     (0.24991,-0.00532686)   (-0.00329549,0.00279206) (-0.000580937,-0.00242934)               (0.466511,0)
+[INFO]	Xerr = 0.0353972
+[INFO]	Zerr = 0.215388 or, 0.215388+0
+[INFO]	Yerr = 0.0340049
+bob<-->QuantumChannel{cost=0.0107124;distance=20km;fidelity=0.715209;bellpair_per_sec=182.493;}<-->alice; Fidelity=0.715209; Xerror=0.0353972; Zerror=0.215388; Yerror=0.0340049
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #10...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-10-20260331-02:34:00-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (33% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18324992   t=142.097417229951   Elapsed: 10.0001s (0m 10s)  14% completed  (33% total)
+     Speed:     ev/sec=1.83248e+06   simsec/sec=14.2096   ev/simsec=128961
+     Messages:  created: 4804040   present: 509   in FES: 432
+** Event #36455680   t=272.851753154082   Elapsed: 20.0002s (0m 20s)  27% completed  (34% total)
+     Speed:     ev/sec=1.81306e+06   simsec/sec=13.0753   ev/simsec=138662
+     Messages:  created: 9557359   present: 510   in FES: 368
+** Event #49313280   t=365.7147684654   Elapsed: 30.0002s (0m 30s)  36% completed  (34% total)
+     Speed:     ev/sec=1.28576e+06   simsec/sec=9.28628   ev/simsec=138458
+     Messages:  created: 12928571   present: 510   in FES: 322
+** Event #66859008   t=492.280381746131   Elapsed: 40.0003s (0m 40s)  49% completed  (34% total)
+     Speed:     ev/sec=1.75456e+06   simsec/sec=12.6565   ev/simsec=138630
+     Messages:  created: 17528839   present: 508   in FES: 256
+sim time: 548.499186011915
+sim time: 548.499186011915
+** Event #74680646   t=1000   Elapsed: 43.9396s (0m 43s)  100% completed  (36% total)
+     Speed:     ev/sec=1.98554e+06   simsec/sec=128.848   ev/simsec=15409.9
+     Messages:  created: 19575442   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74680646
+
+Calling finish() at end of Run #10...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00804721, -0.000269421, 0.00117594
+[INFO]	0.000178827, 0.492847, -0.00400073, 0.00614273
+[INFO]	-0.00206556, -0.0110992, -0.492232, 0.00836707
+[INFO]	-0.00280416, 8.85975e-05, 0.002185, 0.87336
+[INFO]	DM =               (0.467933,0) (-0.00198965,-0.000478894)   (0.00158039,-0.00157538)       (0.24627,0.00377498)
+[INFO]	 (-0.00198965,0.000478894)              (0.0306649,0)   (0.000153806,0.00177461)   (-0.00149098,0.00260816)
+[INFO]	   (0.00158039,0.00157538)  (0.000153806,-0.00177461)              (0.0326549,0)  (-0.00203395,0.000613604)
+[INFO]	     (0.24627,-0.00377498)  (-0.00149098,-0.00260816) (-0.00203395,-0.000613604)               (0.468747,0)
+[INFO]	Xerr = 0.0318137
+[INFO]	Zerr = 0.22207 or, 0.22207+0
+[INFO]	Yerr = 0.0315061
+alice<-->QuantumChannel{cost=0.0107017;distance=20km;fidelity=0.71461;bellpair_per_sec=182.983;}<-->bob; Fidelity=0.71461; Xerror=0.0318137; Zerror=0.22207; Yerror=0.0315061
+Closed file to write.
+BSA Statistics (raw):
+    560614 7951 7974 8153
+last BSM message that was sent 548.50254852998
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.000178827, -0.00206556, -0.00280416
+[INFO]	-0.00804721, 0.492847, -0.0110992, 8.85975e-05
+[INFO]	-0.000269421, -0.00400073, -0.492232, 0.002185
+[INFO]	0.00117594, 0.00614273, 0.00836707, 0.87336
+[INFO]	DM =               (0.467933,0)   (0.00158039,-0.00157538) (-0.00198965,-0.000478894)       (0.24627,0.00377498)
+[INFO]	   (0.00158039,0.00157538)              (0.0326549,0)  (0.000153806,-0.00177461)  (-0.00203395,0.000613604)
+[INFO]	 (-0.00198965,0.000478894)   (0.000153806,0.00177461)              (0.0306649,0)   (-0.00149098,0.00260816)
+[INFO]	     (0.24627,-0.00377498) (-0.00203395,-0.000613604)  (-0.00149098,-0.00260816)               (0.468747,0)
+[INFO]	Xerr = 0.0318137
+[INFO]	Zerr = 0.22207 or, 0.22207+0
+[INFO]	Yerr = 0.0315061
+bob<-->QuantumChannel{cost=0.0107017;distance=20km;fidelity=0.71461;bellpair_per_sec=182.983;}<-->alice; Fidelity=0.71461; Xerror=0.0318137; Zerror=0.22207; Yerror=0.0315061
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #11...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-11-20260331-02:34:44-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (36% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #17559552   t=136.739693190439   Elapsed: 10.0001s (0m 10s)  13% completed  (37% total)
+     Speed:     ev/sec=1.75594e+06   simsec/sec=13.6738   ev/simsec=128416
+     Messages:  created: 4604139   present: 512   in FES: 438
+** Event #34434560   t=258.461855184685   Elapsed: 20.0001s (0m 20s)  25% completed  (37% total)
+     Speed:     ev/sec=1.6875e+06   simsec/sec=12.1722   ev/simsec=138635
+     Messages:  created: 9028021   present: 512   in FES: 375
+** Event #53871872   t=398.636973769356   Elapsed: 30.0001s (0m 30s)  39% completed  (37% total)
+     Speed:     ev/sec=1.94373e+06   simsec/sec=14.0175   ev/simsec=138664
+     Messages:  created: 14123755   present: 509   in FES: 302
+** Event #73977600   t=543.647760648333   Elapsed: 40.0002s (0m 40s)  54% completed  (38% total)
+     Speed:     ev/sec=2.01057e+06   simsec/sec=14.501   ev/simsec=138650
+     Messages:  created: 19394609   present: 512   in FES: 233
+sim time: 547.907960160229
+sim time: 547.907960160229
+** Event #74599995   t=1000   Elapsed: 40.3747s (0m 40s)  100% completed  (40% total)
+     Speed:     ev/sec=1.66168e+06   simsec/sec=1217.51   ev/simsec=1364.82
+     Messages:  created: 19553404   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74599995
+
+Calling finish() at end of Run #11...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.0129683, -0.00214784, 0.00559971
+[INFO]	-0.0226945, 0.512248, 0.00326538, 0.00677935
+[INFO]	-0.00572758, -0.00368539, -0.513514, -0.0159819
+[INFO]	-0.00361272, -0.0142742, 0.00833562, 0.86362
+[INFO]	DM =               (0.466402,0)  (-0.00681062,-0.00154695)   (-0.00397879,0.00542738)      (0.25644,0.000105004)
+[INFO]	  (-0.00681062,0.00154695)              (0.0317919,0)  (-0.000316419,0.00173769)  (-0.00736847,-0.00256359)
+[INFO]	 (-0.00397879,-0.00542738) (-0.000316419,-0.00173769)              (0.0363981,0)   (0.000326468,0.00262087)
+[INFO]	    (0.25644,-0.000105004)   (-0.00736847,0.00256359)  (0.000326468,-0.00262087)               (0.465408,0)
+[INFO]	Xerr = 0.0337786
+[INFO]	Zerr = 0.209465 or, 0.209465+0
+[INFO]	Yerr = 0.0344114
+alice<-->QuantumChannel{cost=0.0104624;distance=20km;fidelity=0.722345;bellpair_per_sec=183.181;}<-->bob; Fidelity=0.722345; Xerror=0.0337786; Zerror=0.209465; Yerror=0.0344114
+Closed file to write.
+BSA Statistics (raw):
+    561231 7930 8105 8086
+last BSM message that was sent 547.909401253114
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0226945, -0.00572758, -0.00361272
+[INFO]	-0.0129683, 0.512248, -0.00368539, -0.0142742
+[INFO]	-0.00214784, 0.00326538, -0.513514, 0.00833562
+[INFO]	0.00559971, 0.00677935, -0.0159819, 0.86362
+[INFO]	DM =               (0.466402,0)   (-0.00397879,0.00542738)  (-0.00681062,-0.00154695)      (0.25644,0.000105004)
+[INFO]	 (-0.00397879,-0.00542738)              (0.0363981,0) (-0.000316419,-0.00173769)   (0.000326468,0.00262087)
+[INFO]	  (-0.00681062,0.00154695)  (-0.000316419,0.00173769)              (0.0317919,0)  (-0.00736847,-0.00256359)
+[INFO]	    (0.25644,-0.000105004)  (0.000326468,-0.00262087)   (-0.00736847,0.00256359)               (0.465408,0)
+[INFO]	Xerr = 0.0337786
+[INFO]	Zerr = 0.209465 or, 0.209465+0
+[INFO]	Yerr = 0.0344114
+bob<-->QuantumChannel{cost=0.0104624;distance=20km;fidelity=0.722345;bellpair_per_sec=183.181;}<-->alice; Fidelity=0.722345; Xerror=0.0337786; Zerror=0.209465; Yerror=0.0344114
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #12...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-12-20260331-02:35:24-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (40% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19013120   t=147.183832012247   Elapsed: 10.0001s (0m 10s)  14% completed  (40% total)
+     Speed:     ev/sec=1.90129e+06   simsec/sec=14.7182   ev/simsec=129179
+     Messages:  created: 4985467   present: 510   in FES: 429
+** Event #37612544   t=281.444876465337   Elapsed: 20.001s (0m 20s)  28% completed  (40% total)
+     Speed:     ev/sec=1.85978e+06   simsec/sec=13.4249   ev/simsec=138532
+     Messages:  created: 9862295   present: 508   in FES: 362
+** Event #56868352   t=420.365011199091   Elapsed: 30.001s (0m 30s)  42% completed  (41% total)
+     Speed:     ev/sec=1.92558e+06   simsec/sec=13.892   ev/simsec=138611
+     Messages:  created: 14910957   present: 510   in FES: 292
+sim time: 551.586542291339
+sim time: 551.586542291339
+** Event #75072548   t=1000   Elapsed: 39.173s (0m 39s)  100% completed  (43% total)
+     Speed:     ev/sec=1.98476e+06   simsec/sec=63.1542   ev/simsec=31427.3
+     Messages:  created: 19680840   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75072548
+
+Calling finish() at end of Run #12...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.000179986, -0.00317633, 0.0120182
+[INFO]	0.00593952, 0.490281, 0.00680396, -0.00269881
+[INFO]	0.00263182, -0.0118606, -0.498503, 0.00551111
+[INFO]	0.00756699, 0.00808625, 0.0251084, 0.866999
+[INFO]	DM =              (0.471646,0)  (0.00197657,-0.00548301) (0.000810178,-0.00203573)     (0.247196,0.00126415)
+[INFO]	  (0.00197657,0.00548301)             (0.0321375,0)  (-0.00205545,0.00466613)  (0.00215958,0.000719823)
+[INFO]	 (0.000810178,0.00203573) (-0.00205545,-0.00466613)              (0.034363,0)  (-0.00206656,0.00707118)
+[INFO]	   (0.247196,-0.00126415) (0.00215958,-0.000719823) (-0.00206656,-0.00707118)              (0.461853,0)
+[INFO]	Xerr = 0.0311948
+[INFO]	Zerr = 0.219554 or, 0.219554+0
+[INFO]	Yerr = 0.0353057
+alice<-->QuantumChannel{cost=0.0107822;distance=20km;fidelity=0.713946;bellpair_per_sec=181.955;}<-->bob; Fidelity=0.713946; Xerror=0.0311948; Zerror=0.219554; Yerror=0.0353057
+Closed file to write.
+BSA Statistics (raw):
+    561718 8082 7964 8180
+last BSM message that was sent 551.590096953322
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00593952, 0.00263182, 0.00756699
+[INFO]	-0.000179986, 0.490281, -0.0118606, 0.00808625
+[INFO]	-0.00317633, 0.00680396, -0.498503, 0.0251084
+[INFO]	0.0120182, -0.00269881, 0.00551111, 0.866999
+[INFO]	DM =              (0.471646,0) (0.000810178,-0.00203573)  (0.00197657,-0.00548301)     (0.247196,0.00126415)
+[INFO]	 (0.000810178,0.00203573)              (0.034363,0) (-0.00205545,-0.00466613)  (-0.00206656,0.00707118)
+[INFO]	  (0.00197657,0.00548301)  (-0.00205545,0.00466613)             (0.0321375,0)  (0.00215958,0.000719823)
+[INFO]	   (0.247196,-0.00126415) (-0.00206656,-0.00707118) (0.00215958,-0.000719823)              (0.461853,0)
+[INFO]	Xerr = 0.0311948
+[INFO]	Zerr = 0.219554 or, 0.219554+0
+[INFO]	Yerr = 0.0353057
+bob<-->QuantumChannel{cost=0.0107822;distance=20km;fidelity=0.713946;bellpair_per_sec=181.955;}<-->alice; Fidelity=0.713946; Xerror=0.0311948; Zerror=0.219554; Yerror=0.0353057
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #13...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-13-20260331-02:36:04-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 2e-06s (0m 00s)  0% completed  (43% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19569152   t=151.178393728008   Elapsed: 10.0002s (0m 10s)  15% completed  (43% total)
+     Speed:     ev/sec=1.95688e+06   simsec/sec=15.1176   ev/simsec=129444
+     Messages:  created: 5130999   present: 510   in FES: 428
+** Event #39984896   t=298.51651485326   Elapsed: 20.0002s (0m 20s)  29% completed  (44% total)
+     Speed:     ev/sec=2.04157e+06   simsec/sec=14.7338   ev/simsec=138564
+     Messages:  created: 10483887   present: 510   in FES: 354
+** Event #60944128   t=449.777912028695   Elapsed: 30.0002s (0m 30s)  44% completed  (44% total)
+     Speed:     ev/sec=2.09592e+06   simsec/sec=15.1261   ev/simsec=138563
+     Messages:  created: 15978927   present: 512   in FES: 280
+sim time: 548.553176593873
+sim time: 548.553176593873
+** Event #74676214   t=1000   Elapsed: 36.7128s (0m 36s)  100% completed  (46% total)
+     Speed:     ev/sec=2.04574e+06   simsec/sec=81.9558   ev/simsec=24961.4
+     Messages:  created: 19574364   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74676214
+
+Calling finish() at end of Run #13...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00884956, -0.00838367, 0.00229337
+[INFO]	-0.0116814, 0.482478, 0.00404263, -0.00179437
+[INFO]	-0.00243397, 0.00939524, -0.493014, -0.00931733
+[INFO]	0.00192643, -0.00661084, 0.00856684, 0.866067
+[INFO]	DM =               (0.467572,0)  (-0.0038651,-4.57935e-05)   (-0.00336895,0.00293782)     (0.243873,-0.00335947)
+[INFO]	  (-0.0038651,4.57935e-05)              (0.0333914,0)  (-0.00263393,-0.00133815)  (-0.00247176,-0.00172084)
+[INFO]	 (-0.00336895,-0.00293782)   (-0.00263393,0.00133815)              (0.0335749,0)  (-0.000559679,0.00423763)
+[INFO]	     (0.243873,0.00335947)   (-0.00247176,0.00172084) (-0.000559679,-0.00423763)               (0.465462,0)
+[INFO]	Xerr = 0.0308492
+[INFO]	Zerr = 0.222644 or, 0.222644+0
+[INFO]	Yerr = 0.0361171
+alice<-->QuantumChannel{cost=0.0108303;distance=20km;fidelity=0.71039;bellpair_per_sec=182.965;}<-->bob; Fidelity=0.71039; Xerror=0.0308492; Zerror=0.222644; Yerror=0.0361171
+Closed file to write.
+BSA Statistics (raw):
+    560951 7894 8064 8027
+last BSM message that was sent 548.560958404052
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0116814, -0.00243397, 0.00192643
+[INFO]	-0.00884956, 0.482478, 0.00939524, -0.00661084
+[INFO]	-0.00838367, 0.00404263, -0.493014, 0.00856684
+[INFO]	0.00229337, -0.00179437, -0.00931733, 0.866067
+[INFO]	DM =               (0.467572,0)   (-0.00336895,0.00293782)  (-0.0038651,-4.57935e-05)     (0.243873,-0.00335947)
+[INFO]	 (-0.00336895,-0.00293782)              (0.0335749,0)   (-0.00263393,0.00133815)  (-0.000559679,0.00423763)
+[INFO]	  (-0.0038651,4.57935e-05)  (-0.00263393,-0.00133815)              (0.0333914,0)  (-0.00247176,-0.00172084)
+[INFO]	     (0.243873,0.00335947) (-0.000559679,-0.00423763)   (-0.00247176,0.00172084)               (0.465462,0)
+[INFO]	Xerr = 0.0308492
+[INFO]	Zerr = 0.222644 or, 0.222644+0
+[INFO]	Yerr = 0.0361171
+bob<-->QuantumChannel{cost=0.0108303;distance=20km;fidelity=0.71039;bellpair_per_sec=182.965;}<-->alice; Fidelity=0.71039; Xerror=0.0308492; Zerror=0.222644; Yerror=0.0361171
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #14...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-14-20260331-02:36:41-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (46% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #20759296   t=159.770270643296   Elapsed: 10s (0m 10s)  15% completed  (47% total)
+     Speed:     ev/sec=2.07593e+06   simsec/sec=15.977   ev/simsec=129932
+     Messages:  created: 5443155   present: 510   in FES: 423
+** Event #40460288   t=302.001513179485   Elapsed: 20.0141s (0m 20s)  30% completed  (47% total)
+     Speed:     ev/sec=1.96733e+06   simsec/sec=14.2031   ev/simsec=138514
+     Messages:  created: 10609535   present: 510   in FES: 351
+** Event #58665216   t=433.34534401204   Elapsed: 30.0141s (0m 30s)  43% completed  (48% total)
+     Speed:     ev/sec=1.82049e+06   simsec/sec=13.1344   ev/simsec=138605
+     Messages:  created: 15382675   present: 510   in FES: 286
+sim time: 551.169208883443
+sim time: 551.169208883443
+** Event #75034607   t=1000   Elapsed: 39.1117s (0m 39s)  100% completed  (50% total)
+     Speed:     ev/sec=1.7993e+06   simsec/sec=62.2431   ev/simsec=28907.7
+     Messages:  created: 19670114   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75034607
+
+Calling finish() at end of Run #14...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00960934, -0.000893815, -0.00368738
+[INFO]	0.00942973, 0.50229, -0.00505598, -0.000811762
+[INFO]	0.0159099, 0.00661052, -0.497319, -0.000814111
+[INFO]	-0.00332764, 0.0071736, 0.00690893, 0.861498
+[INFO]	DM =              (0.463621,0)  (0.00419574,-0.00150378)  (0.00215449,-0.00377395)   (0.249902,-0.000388636)
+[INFO]	  (0.00419574,0.00150378)             (0.0347154,0)  (0.00124288,-0.00291662)    (0.00256037,-0.004181)
+[INFO]	  (0.00215449,0.00377395)   (0.00124288,0.00291662)             (0.0345355,0)  (0.000608935,0.00195069)
+[INFO]	   (0.249902,0.000388636)     (0.00256037,0.004181) (0.000608935,-0.00195069)              (0.467128,0)
+[INFO]	Xerr = 0.0358683
+[INFO]	Zerr = 0.215472 or, 0.215472+0
+[INFO]	Yerr = 0.0333825
+alice<-->QuantumChannel{cost=0.0107339;distance=20km;fidelity=0.715277;bellpair_per_sec=182.093;}<-->bob; Fidelity=0.715277; Xerror=0.0358683; Zerror=0.215472; Yerror=0.0333825
+Closed file to write.
+BSA Statistics (raw):
+    562012 8101 8088 8043
+last BSM message that was sent 551.171610697918
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00942973, 0.0159099, -0.00332764
+[INFO]	0.00960934, 0.50229, 0.00661052, 0.0071736
+[INFO]	-0.000893815, -0.00505598, -0.497319, 0.00690893
+[INFO]	-0.00368738, -0.000811762, -0.000814111, 0.861498
+[INFO]	DM =              (0.463621,0)  (0.00215449,-0.00377395)  (0.00419574,-0.00150378)   (0.249902,-0.000388636)
+[INFO]	  (0.00215449,0.00377395)             (0.0345355,0)   (0.00124288,0.00291662)  (0.000608935,0.00195069)
+[INFO]	  (0.00419574,0.00150378)  (0.00124288,-0.00291662)             (0.0347154,0)    (0.00256037,-0.004181)
+[INFO]	   (0.249902,0.000388636) (0.000608935,-0.00195069)     (0.00256037,0.004181)              (0.467128,0)
+[INFO]	Xerr = 0.0358683
+[INFO]	Zerr = 0.215472 or, 0.215472+0
+[INFO]	Yerr = 0.0333825
+bob<-->QuantumChannel{cost=0.0107339;distance=20km;fidelity=0.715277;bellpair_per_sec=182.093;}<-->alice; Fidelity=0.715277; Xerror=0.0358683; Zerror=0.215472; Yerror=0.0333825
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #15...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-15-20260331-02:37:20-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (50% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #17808640   t=138.6495001089   Elapsed: 10.0001s (0m 10s)  13% completed  (50% total)
+     Speed:     ev/sec=1.78085e+06   simsec/sec=13.8649   ev/simsec=128444
+     Messages:  created: 4670431   present: 510   in FES: 434
+** Event #38404864   t=287.295156782142   Elapsed: 20.0002s (0m 20s)  28% completed  (50% total)
+     Speed:     ev/sec=2.05961e+06   simsec/sec=14.8645   ev/simsec=138559
+     Messages:  created: 10071271   present: 510   in FES: 360
+** Event #58478848   t=432.066533170291   Elapsed: 30.0002s (0m 30s)  43% completed  (51% total)
+     Speed:     ev/sec=2.00739e+06   simsec/sec=14.4771   ev/simsec=138660
+     Messages:  created: 15333647   present: 510   in FES: 286
+sim time: 550.137205760865
+sim time: 550.137205760865
+** Event #74888448   t=1000   Elapsed: 37.8155s (0m 37s)  100% completed  (53% total)
+     Speed:     ev/sec=2.09967e+06   simsec/sec=72.6466   ev/simsec=28902.5
+     Messages:  created: 19630870   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74888448
+
+Calling finish() at end of Run #15...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.0075526, 0.00422017, 0.00434898
+[INFO]	0.0136666, 0.501169, 0.0036543, -0.000269034
+[INFO]	-0.000987699, -0.00335845, -0.477418, -0.0101194
+[INFO]	0.00718914, 0.000991795, -0.00123894, 0.867933
+[INFO]	DM =              (0.469868,0) (-0.0016402,-0.000745307)   (0.00334939,0.00277678)   (0.244647,-7.39642e-05)
+[INFO]	 (-0.0016402,0.000745307)             (0.0337268,0)   (0.00593781,0.00175319)  (0.00348391,-0.00228293)
+[INFO]	 (0.00334939,-0.00277678)  (0.00593781,-0.00175319)             (0.0323067,0)  (-0.0021361,-0.00136478)
+[INFO]	   (0.244647,7.39642e-05)   (0.00348391,0.00228293)   (-0.0021361,0.00136478)              (0.464099,0)
+[INFO]	Xerr = 0.0389546
+[INFO]	Zerr = 0.222337 or, 0.222337+0
+[INFO]	Yerr = 0.027079
+alice<-->QuantumChannel{cost=0.0108238;distance=20km;fidelity=0.71163;bellpair_per_sec=182.436;}<-->bob; Fidelity=0.71163; Xerror=0.0389546; Zerror=0.222337; Yerror=0.027079
+Closed file to write.
+BSA Statistics (raw):
+    561902 8088 8135 8143
+last BSM message that was sent 550.139031141586
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.0136666, -0.000987699, 0.00718914
+[INFO]	-0.0075526, 0.501169, -0.00335845, 0.000991795
+[INFO]	0.00422017, 0.0036543, -0.477418, -0.00123894
+[INFO]	0.00434898, -0.000269034, -0.0101194, 0.867933
+[INFO]	DM =              (0.469868,0)   (0.00334939,0.00277678) (-0.0016402,-0.000745307)   (0.244647,-7.39642e-05)
+[INFO]	 (0.00334939,-0.00277678)             (0.0323067,0)  (0.00593781,-0.00175319)  (-0.0021361,-0.00136478)
+[INFO]	 (-0.0016402,0.000745307)   (0.00593781,0.00175319)             (0.0337268,0)  (0.00348391,-0.00228293)
+[INFO]	   (0.244647,7.39642e-05)   (-0.0021361,0.00136478)   (0.00348391,0.00228293)              (0.464099,0)
+[INFO]	Xerr = 0.0389546
+[INFO]	Zerr = 0.222337 or, 0.222337+0
+[INFO]	Yerr = 0.027079
+bob<-->QuantumChannel{cost=0.0108238;distance=20km;fidelity=0.71163;bellpair_per_sec=182.436;}<-->alice; Fidelity=0.71163; Xerror=0.0389546; Zerror=0.222337; Yerror=0.027079
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #16...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-16-20260331-02:37:58-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (53% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19589888   t=151.34920900311   Elapsed: 10s (0m 10s)  15% completed  (53% total)
+     Speed:     ev/sec=1.95899e+06   simsec/sec=15.1349   ev/simsec=129435
+     Messages:  created: 5136675   present: 511   in FES: 428
+** Event #39478784   t=294.841870974969   Elapsed: 20.0002s (0m 20s)  29% completed  (54% total)
+     Speed:     ev/sec=1.98886e+06   simsec/sec=14.349   ev/simsec=138606
+     Messages:  created: 10350485   present: 510   in FES: 355
+** Event #59349504   t=438.292453946786   Elapsed: 30.0003s (0m 30s)  43% completed  (54% total)
+     Speed:     ev/sec=1.98705e+06   simsec/sec=14.3449   ev/simsec=138520
+     Messages:  created: 15560947   present: 511   in FES: 284
+sim time: 549.067349918441
+sim time: 549.067349918441
+** Event #74731366   t=1000   Elapsed: 37.585s (0m 37s)  100% completed  (56% total)
+     Speed:     ev/sec=2.02799e+06   simsec/sec=74.003   ev/simsec=27404.2
+     Messages:  created: 19589004   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74731366
+
+Calling finish() at end of Run #16...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00870033, 0.00533792, 0.0106345
+[INFO]	-0.0113912, 0.501121, -0.00653829, 0.00413967
+[INFO]	-0.00533792, -0.00473157, -0.490817, 0.00251527
+[INFO]	0.0149603, 0.00188798, 0.00232558, 0.86049
+[INFO]	DM =               (0.471521,0)  (-0.00170309,-0.00191587)  (-0.00181287,0.000705662)      (0.247985,0.00281747)
+[INFO]	  (-0.00170309,0.00191587)              (0.0359589,0)  (0.00257605,-0.000451679)    (-0.00388271,0.0019633)
+[INFO]	(-0.00181287,-0.000705662)   (0.00257605,0.000451679)               (0.033796,0) (-0.00264708,-0.000753084)
+[INFO]	    (0.247985,-0.00281747)   (-0.00388271,-0.0019633)  (-0.00264708,0.000753084)               (0.458724,0)
+[INFO]	Xerr = 0.0374535
+[INFO]	Zerr = 0.217138 or, 0.217138+0
+[INFO]	Yerr = 0.0323014
+alice<-->QuantumChannel{cost=0.010758;distance=20km;fidelity=0.713107;bellpair_per_sec=182.793;}<-->bob; Fidelity=0.713107; Xerror=0.0374535; Zerror=0.217138; Yerror=0.0323014
+Closed file to write.
+BSA Statistics (raw):
+    561607 8115 8112 8062
+last BSM message that was sent 549.071481008178
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0113912, -0.00533792, 0.0149603
+[INFO]	-0.00870033, 0.501121, -0.00473157, 0.00188798
+[INFO]	0.00533792, -0.00653829, -0.490817, 0.00232558
+[INFO]	0.0106345, 0.00413967, 0.00251527, 0.86049
+[INFO]	DM =               (0.471521,0)  (-0.00181287,0.000705662)  (-0.00170309,-0.00191587)      (0.247985,0.00281747)
+[INFO]	(-0.00181287,-0.000705662)               (0.033796,0)   (0.00257605,0.000451679) (-0.00264708,-0.000753084)
+[INFO]	  (-0.00170309,0.00191587)  (0.00257605,-0.000451679)              (0.0359589,0)    (-0.00388271,0.0019633)
+[INFO]	    (0.247985,-0.00281747)  (-0.00264708,0.000753084)   (-0.00388271,-0.0019633)               (0.458724,0)
+[INFO]	Xerr = 0.0374535
+[INFO]	Zerr = 0.217138 or, 0.217138+0
+[INFO]	Yerr = 0.0323014
+bob<-->QuantumChannel{cost=0.010758;distance=20km;fidelity=0.713107;bellpair_per_sec=182.793;}<-->alice; Fidelity=0.713107; Xerror=0.0374535; Zerror=0.217138; Yerror=0.0323014
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #17...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-17-20260331-02:38:35-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (56% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19123968   t=147.970081485703   Elapsed: 10s (0m 10s)  14% completed  (57% total)
+     Speed:     ev/sec=1.91239e+06   simsec/sec=14.797   ev/simsec=129242
+     Messages:  created: 5013925   present: 512   in FES: 431
+** Event #34580224   t=259.58925559105   Elapsed: 20.0001s (0m 20s)  25% completed  (57% total)
+     Speed:     ev/sec=1.54561e+06   simsec/sec=11.1618   ev/simsec=138473
+     Messages:  created: 9067203   present: 511   in FES: 373
+** Event #52620288   t=389.605377930225   Elapsed: 30.0003s (0m 30s)  38% completed  (57% total)
+     Speed:     ev/sec=1.80397e+06   simsec/sec=13.0013   ev/simsec=138753
+     Messages:  created: 13796123   present: 511   in FES: 312
+** Event #72314880   t=531.735648627005   Elapsed: 40.0028s (0m 40s)  53% completed  (58% total)
+     Speed:     ev/sec=1.96897e+06   simsec/sec=14.2095   ev/simsec=138567
+     Messages:  created: 18959725   present: 512   in FES: 242
+sim time: 549.210307297433
+sim time: 549.210307297433
+** Event #74770784   t=1000   Elapsed: 41.3221s (0m 41s)  100% completed  (60% total)
+     Speed:     ev/sec=1.86158e+06   simsec/sec=354.74   ev/simsec=5247.72
+     Messages:  created: 19599336   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74770784
+
+Calling finish() at end of Run #17...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00134759, 0.00356379, -0.00206001
+[INFO]	0.00116791, 0.492768, -0.0158559, 0.00490018
+[INFO]	0.00213828, 0.00485088, -0.488952, 0.0181818
+[INFO]	0.000985222, 0.0173693, 0.0119615, 0.862965
+[INFO]	DM =               (0.465472,0)   (0.00467922,-0.00388132)   (0.00151702,-0.00508002)       (0.24543,0.00275124)
+[INFO]	   (0.00467922,0.00388132)              (0.0350202,0)  (0.000953925,-0.00517668)  (-0.000933068,0.00401089)
+[INFO]	   (0.00151702,0.00508002)   (0.000953925,0.00517668)              (0.0334975,0)   (-0.00400542,0.00209943)
+[INFO]	     (0.24543,-0.00275124) (-0.000933068,-0.00401089)  (-0.00400542,-0.00209943)                (0.46601,0)
+[INFO]	Xerr = 0.0352128
+[INFO]	Zerr = 0.220311 or, 0.220311+0
+[INFO]	Yerr = 0.0333049
+alice<-->QuantumChannel{cost=0.0108195;distance=20km;fidelity=0.711171;bellpair_per_sec=182.745;}<-->bob; Fidelity=0.711171; Xerror=0.0352128; Zerror=0.220311; Yerror=0.0333049
+Closed file to write.
+BSA Statistics (raw):
+    561328 8066 8101 8185
+last BSM message that was sent 549.21347768158
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00116791, 0.00213828, 0.000985222
+[INFO]	0.00134759, 0.492768, 0.00485088, 0.0173693
+[INFO]	0.00356379, -0.0158559, -0.488952, 0.0119615
+[INFO]	-0.00206001, 0.00490018, 0.0181818, 0.862965
+[INFO]	DM =               (0.465472,0)   (0.00151702,-0.00508002)   (0.00467922,-0.00388132)       (0.24543,0.00275124)
+[INFO]	   (0.00151702,0.00508002)              (0.0334975,0)   (0.000953925,0.00517668)   (-0.00400542,0.00209943)
+[INFO]	   (0.00467922,0.00388132)  (0.000953925,-0.00517668)              (0.0350202,0)  (-0.000933068,0.00401089)
+[INFO]	     (0.24543,-0.00275124)  (-0.00400542,-0.00209943) (-0.000933068,-0.00401089)                (0.46601,0)
+[INFO]	Xerr = 0.0352128
+[INFO]	Zerr = 0.220311 or, 0.220311+0
+[INFO]	Yerr = 0.0333049
+bob<-->QuantumChannel{cost=0.0108195;distance=20km;fidelity=0.711171;bellpair_per_sec=182.745;}<-->alice; Fidelity=0.711171; Xerror=0.0352128; Zerror=0.220311; Yerror=0.0333049
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #18...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-18-20260331-02:39:17-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (60% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19290112   t=149.150994732731   Elapsed: 10s (0m 10s)  14% completed  (60% total)
+     Speed:     ev/sec=1.92901e+06   simsec/sec=14.9151   ev/simsec=129333
+     Messages:  created: 5057871   present: 512   in FES: 430
+** Event #38749440   t=289.682249488915   Elapsed: 20.0002s (0m 20s)  28% completed  (60% total)
+     Speed:     ev/sec=1.94589e+06   simsec/sec=14.0528   ev/simsec=138470
+     Messages:  created: 10161127   present: 510   in FES: 358
+** Event #56608512   t=418.522646250848   Elapsed: 30.0003s (0m 30s)  41% completed  (61% total)
+     Speed:     ev/sec=1.78589e+06   simsec/sec=12.8839   ev/simsec=138614
+     Messages:  created: 14843561   present: 511   in FES: 294
+sim time: 551.223202061401
+sim time: 551.223202061401
+** Event #75019008   t=551.257518802556   Elapsed: 40.0205s (0m 40s)  55% completed  (61% total)
+     Speed:     ev/sec=1.83734e+06   simsec/sec=13.2467   ev/simsec=138701
+     Messages:  created: 19670018   present: 510   in FES: 227
+** Event #75051819   t=1000   Elapsed: 40.0397s (0m 40s)  100% completed  (63% total)
+     Speed:     ev/sec=1.71233e+06   simsec/sec=23402   ev/simsec=73.1703
+     Messages:  created: 19674302   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75051819
+
+Calling finish() at end of Run #18...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00729139, -0.0031186, 0.00364498
+[INFO]	0.00639121, 0.488523, 0.0149227, -0.006296
+[INFO]	-0.00098013, 0.0228773, -0.503341, 0.007327
+[INFO]	0.00692546, -0.000358551, -0.000806668, 0.865865
+[INFO]	DM =              (0.469109,0)  (0.00173321,0.000981316) (2.38034e-05,-0.00158672)    (0.247966,-0.00944999)
+[INFO]	(0.00173321,-0.000981316)             (0.0343539,0) (-0.00370463,-0.00198866)    (0.0031718,0.00207678)
+[INFO]	 (2.38034e-05,0.00158672)  (-0.00370463,0.00198866)             (0.0327137,0)  (0.00191248,0.000577982)
+[INFO]	    (0.247966,0.00944999)   (0.0031718,-0.00207678) (0.00191248,-0.000577982)              (0.463824,0)
+[INFO]	Xerr = 0.0298292
+[INFO]	Zerr = 0.2185 or, 0.2185+0
+[INFO]	Yerr = 0.0372384
+alice<-->QuantumChannel{cost=0.0107604;distance=20km;fidelity=0.714432;bellpair_per_sec=182.075;}<-->bob; Fidelity=0.714432; Xerror=0.0298292; Zerror=0.2185; Yerror=0.0372384
+Closed file to write.
+BSA Statistics (raw):
+    562650 8021 7916 8165
+last BSM message that was sent 551.225027435122
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00639121, -0.00098013, 0.00692546
+[INFO]	0.00729139, 0.488523, 0.0228773, -0.000358551
+[INFO]	-0.0031186, 0.0149227, -0.503341, -0.000806668
+[INFO]	0.00364498, -0.006296, 0.007327, 0.865865
+[INFO]	DM =              (0.469109,0) (2.38034e-05,-0.00158672)  (0.00173321,0.000981316)    (0.247966,-0.00944999)
+[INFO]	 (2.38034e-05,0.00158672)             (0.0327137,0)  (-0.00370463,0.00198866)  (0.00191248,0.000577982)
+[INFO]	(0.00173321,-0.000981316) (-0.00370463,-0.00198866)             (0.0343539,0)    (0.0031718,0.00207678)
+[INFO]	    (0.247966,0.00944999) (0.00191248,-0.000577982)   (0.0031718,-0.00207678)              (0.463824,0)
+[INFO]	Xerr = 0.0298292
+[INFO]	Zerr = 0.2185 or, 0.2185+0
+[INFO]	Yerr = 0.0372384
+bob<-->QuantumChannel{cost=0.0107604;distance=20km;fidelity=0.714432;bellpair_per_sec=182.075;}<-->alice; Fidelity=0.714432; Xerror=0.0298292; Zerror=0.2185; Yerror=0.0372384
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #19...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-19-20260331-02:39:57-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (63% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19581952   t=151.15610560252   Elapsed: 10s (0m 10s)  15% completed  (63% total)
+     Speed:     ev/sec=1.95819e+06   simsec/sec=15.1156   ev/simsec=129548
+     Messages:  created: 5133161   present: 509   in FES: 426
+** Event #39920640   t=297.903963821676   Elapsed: 20.0001s (0m 20s)  29% completed  (64% total)
+     Speed:     ev/sec=2.03386e+06   simsec/sec=14.6747   ev/simsec=138596
+     Messages:  created: 10466133   present: 510   in FES: 354
+** Event #57009920   t=421.218128820011   Elapsed: 30.0043s (0m 30s)  42% completed  (64% total)
+     Speed:     ev/sec=1.7082e+06   simsec/sec=12.3262   ev/simsec=138583
+     Messages:  created: 14946961   present: 510   in FES: 292
+sim time: 549.238746683297
+sim time: 549.238746683297
+** Event #74793064   t=1000   Elapsed: 38.9715s (0m 38s)  100% completed  (66% total)
+     Speed:     ev/sec=1.98314e+06   simsec/sec=64.5174   ev/simsec=30738
+     Messages:  created: 19604862   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74793064
+
+Calling finish() at end of Run #19...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00981717, -0.00117445, -0.0124594
+[INFO]	0.00225164, 0.486445, -0.0145245, 0.00442948
+[INFO]	-0.00551089, 0.0187226, -0.495347, -0.0193154
+[INFO]	-0.00433369, -0.00197771, -0.00639697, 0.867642
+[INFO]	DM =              (0.462712,0)  (-0.00294872,0.00189286)   (0.00167028,0.00620658)    (0.245448,-0.00104951)
+[INFO]	(-0.00294872,-0.00189286)              (0.035121,0) (-0.00222557,-0.00831177) (-0.00054446,-0.00345113)
+[INFO]	 (0.00167028,-0.00620658)  (-0.00222557,0.00831177)             (0.0310581,0) (-0.00195987,-0.00130563)
+[INFO]	    (0.245448,0.00104951)  (-0.00054446,0.00345113)  (-0.00195987,0.00130563)              (0.471109,0)
+[INFO]	Xerr = 0.030864
+[INFO]	Zerr = 0.221462 or, 0.221462+0
+[INFO]	Yerr = 0.0353151
+alice<-->QuantumChannel{cost=0.010784;distance=20km;fidelity=0.712359;bellpair_per_sec=182.736;}<-->bob; Fidelity=0.712359; Xerror=0.030864; Zerror=0.221462; Yerror=0.0353151
+Closed file to write.
+BSA Statistics (raw):
+    561822 8065 7998 8023
+last BSM message that was sent 549.2403799191
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00225164, -0.00551089, -0.00433369
+[INFO]	-0.00981717, 0.486445, 0.0187226, -0.00197771
+[INFO]	-0.00117445, -0.0145245, -0.495347, -0.00639697
+[INFO]	-0.0124594, 0.00442948, -0.0193154, 0.867642
+[INFO]	DM =              (0.462712,0)   (0.00167028,0.00620658)  (-0.00294872,0.00189286)    (0.245448,-0.00104951)
+[INFO]	 (0.00167028,-0.00620658)             (0.0310581,0)  (-0.00222557,0.00831177) (-0.00195987,-0.00130563)
+[INFO]	(-0.00294872,-0.00189286) (-0.00222557,-0.00831177)              (0.035121,0) (-0.00054446,-0.00345113)
+[INFO]	    (0.245448,0.00104951)  (-0.00195987,0.00130563)  (-0.00054446,0.00345113)              (0.471109,0)
+[INFO]	Xerr = 0.030864
+[INFO]	Zerr = 0.221462 or, 0.221462+0
+[INFO]	Yerr = 0.0353151
+bob<-->QuantumChannel{cost=0.010784;distance=20km;fidelity=0.712359;bellpair_per_sec=182.736;}<-->alice; Fidelity=0.712359; Xerror=0.030864; Zerror=0.221462; Yerror=0.0353151
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #20...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-20-20260331-02:40:36-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 2e-06s (0m 00s)  0% completed  (66% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #20521472   t=158.041366305132   Elapsed: 10s (0m 10s)  15% completed  (67% total)
+     Speed:     ev/sec=2.05214e+06   simsec/sec=15.8041   ev/simsec=129849
+     Messages:  created: 5380947   present: 510   in FES: 424
+** Event #38385152   t=286.811823803913   Elapsed: 20.0001s (0m 20s)  28% completed  (67% total)
+     Speed:     ev/sec=1.78635e+06   simsec/sec=12.8769   ev/simsec=138725
+     Messages:  created: 10063805   present: 509   in FES: 359
+** Event #56427520   t=417.010577674647   Elapsed: 30.0002s (0m 30s)  41% completed  (68% total)
+     Speed:     ev/sec=1.80422e+06   simsec/sec=13.0198   ev/simsec=138576
+     Messages:  created: 14795123   present: 512   in FES: 296
+sim time: 550.205227827837
+sim time: 550.205227827837
+** Event #74925402   t=1000   Elapsed: 39.3788s (0m 39s)  100% completed  (70% total)
+     Speed:     ev/sec=1.97235e+06   simsec/sec=62.15   ev/simsec=31735.3
+     Messages:  created: 19640150   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74925402
+
+Calling finish() at end of Run #20...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00199023, 0.0121607, 0.00138287
+[INFO]	-0.00108558, 0.496834, 0.00593336, -0.00118343
+[INFO]	0.00528728, 0.0021544, -0.485548, -0.0212121
+[INFO]	0.00138287, -0.00167652, 0.00413743, 0.862082
+[INFO]	DM =               (0.466212,0) (-0.000916687,-0.00407454)  (-0.000567253,0.00398121)     (0.245595,-0.00202194)
+[INFO]	 (-0.000916687,0.00407454)              (0.0344796,0)    (0.0028214,0.000944741)   (2.4463e-05,-0.00662485)
+[INFO]	(-0.000567253,-0.00398121)   (0.0028214,-0.000944741)              (0.0344796,0) (-7.84275e-05,-0.00200582)
+[INFO]	     (0.245595,0.00202194)    (2.4463e-05,0.00662485)  (-7.84275e-05,0.00200582)               (0.464829,0)
+[INFO]	Xerr = 0.037301
+[INFO]	Zerr = 0.219925 or, 0.219925+0
+[INFO]	Yerr = 0.0316582
+alice<-->QuantumChannel{cost=0.0108408;distance=20km;fidelity=0.711116;bellpair_per_sec=182.414;}<-->bob; Fidelity=0.711116; Xerror=0.037301; Zerror=0.219925; Yerror=0.0316582
+Closed file to write.
+BSA Statistics (raw):
+    562363 8020 8008 8141
+last BSM message that was sent 550.205708201132
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.00108558, 0.00528728, 0.00138287
+[INFO]	-0.00199023, 0.496834, 0.0021544, -0.00167652
+[INFO]	0.0121607, 0.00593336, -0.485548, 0.00413743
+[INFO]	0.00138287, -0.00118343, -0.0212121, 0.862082
+[INFO]	DM =               (0.466212,0)  (-0.000567253,0.00398121) (-0.000916687,-0.00407454)     (0.245595,-0.00202194)
+[INFO]	(-0.000567253,-0.00398121)              (0.0344796,0)   (0.0028214,-0.000944741) (-7.84275e-05,-0.00200582)
+[INFO]	 (-0.000916687,0.00407454)    (0.0028214,0.000944741)              (0.0344796,0)   (2.4463e-05,-0.00662485)
+[INFO]	     (0.245595,0.00202194)  (-7.84275e-05,0.00200582)    (2.4463e-05,0.00662485)               (0.464829,0)
+[INFO]	Xerr = 0.037301
+[INFO]	Zerr = 0.219925 or, 0.219925+0
+[INFO]	Yerr = 0.0316582
+bob<-->QuantumChannel{cost=0.0108408;distance=20km;fidelity=0.711116;bellpair_per_sec=182.414;}<-->alice; Fidelity=0.711116; Xerror=0.037301; Zerror=0.219925; Yerror=0.0316582
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #21...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-21-20260331-02:41:15-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 6.1e-05s (0m 00s)  0% completed  (70% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19629568   t=151.789695955625   Elapsed: 10.0006s (0m 10s)  15% completed  (70% total)
+     Speed:     ev/sec=1.96286e+06   simsec/sec=15.1782   ev/simsec=129321
+     Messages:  created: 5148177   present: 510   in FES: 429
+** Event #35815680   t=268.589436409088   Elapsed: 20.0006s (0m 20s)  26% completed  (70% total)
+     Speed:     ev/sec=1.6186e+06   simsec/sec=11.6799   ev/simsec=138580
+     Messages:  created: 9392002   present: 511   in FES: 369
+** Event #52674048   t=390.307850352433   Elapsed: 30.0007s (0m 30s)  39% completed  (71% total)
+     Speed:     ev/sec=1.68583e+06   simsec/sec=12.1718   ev/simsec=138503
+     Messages:  created: 13812217   present: 514   in FES: 311
+** Event #70912000   t=521.919720496598   Elapsed: 40.0007s (0m 40s)  52% completed  (71% total)
+     Speed:     ev/sec=1.82378e+06   simsec/sec=13.1611   ev/simsec=138574
+     Messages:  created: 18594075   present: 510   in FES: 244
+sim time: 551.556950420967
+sim time: 551.556950420967
+** Event #75057417   t=1000   Elapsed: 42.1577s (0m 42s)  100% completed  (73% total)
+     Speed:     ev/sec=1.92185e+06   simsec/sec=221.64   ev/simsec=8671.02
+     Messages:  created: 19676698   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75057417
+
+Calling finish() at end of Run #21...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.0058176, 0.0123039, 0.0202231
+[INFO]	8.95015e-05, 0.485725, -0.000451549, -0.00437539
+[INFO]	-0.00713267, -0.00396754, -0.496612, 0.00928406
+[INFO]	0.0205858, 0.0159161, 0.00291918, 0.871951
+[INFO]	DM =                (0.47819,0)   (0.00252462,-0.00380576) (-0.00107147,-0.000537847)      (0.245584,0.00110477)
+[INFO]	   (0.00252462,0.00380576)               (0.032103,0)  (-0.00272187,0.000878997)    (0.00111622,0.00410418)
+[INFO]	 (-0.00107147,0.000537847) (-0.00272187,-0.000878997)              (0.0319216,0)  (-0.00543342,-0.00234617)
+[INFO]	    (0.245584,-0.00110477)   (0.00111622,-0.00410418)   (-0.00543342,0.00234617)               (0.457785,0)
+[INFO]	Xerr = 0.0292905
+[INFO]	Zerr = 0.222404 or, 0.222404+0
+[INFO]	Yerr = 0.0347342
+alice<-->QuantumChannel{cost=0.0107929;distance=20km;fidelity=0.713572;bellpair_per_sec=181.965;}<-->bob; Fidelity=0.713572; Xerror=0.0292905; Zerror=0.222404; Yerror=0.0347342
+Closed file to write.
+BSA Statistics (raw):
+    562278 7961 8080 8177
+last BSM message that was sent 551.558775798688
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 8.95015e-05, -0.00713267, 0.0205858
+[INFO]	-0.0058176, 0.485725, -0.00396754, 0.0159161
+[INFO]	0.0123039, -0.000451549, -0.496612, 0.00291918
+[INFO]	0.0202231, -0.00437539, 0.00928406, 0.871951
+[INFO]	DM =                (0.47819,0) (-0.00107147,-0.000537847)   (0.00252462,-0.00380576)      (0.245584,0.00110477)
+[INFO]	 (-0.00107147,0.000537847)              (0.0319216,0) (-0.00272187,-0.000878997)  (-0.00543342,-0.00234617)
+[INFO]	   (0.00252462,0.00380576)  (-0.00272187,0.000878997)               (0.032103,0)    (0.00111622,0.00410418)
+[INFO]	    (0.245584,-0.00110477)   (-0.00543342,0.00234617)   (0.00111622,-0.00410418)               (0.457785,0)
+[INFO]	Xerr = 0.0292905
+[INFO]	Zerr = 0.222404 or, 0.222404+0
+[INFO]	Yerr = 0.0347342
+bob<-->QuantumChannel{cost=0.0107929;distance=20km;fidelity=0.713572;bellpair_per_sec=181.965;}<-->alice; Fidelity=0.713572; Xerror=0.0292905; Zerror=0.222404; Yerror=0.0347342
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #22...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-22-20260331-02:41:58-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 6.1e-05s (0m 00s)  0% completed  (73% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19317504   t=149.420666722144   Elapsed: 10.0003s (0m 10s)  14% completed  (73% total)
+     Speed:     ev/sec=1.93171e+06   simsec/sec=14.9418   ev/simsec=129283
+     Messages:  created: 5065319   present: 510   in FES: 428
+** Event #37860352   t=283.055231209095   Elapsed: 20.0028s (0m 20s)  28% completed  (74% total)
+     Speed:     ev/sec=1.85382e+06   simsec/sec=13.3601   ev/simsec=138758
+     Messages:  created: 9926453   present: 512   in FES: 363
+** Event #55900672   t=413.192691069987   Elapsed: 30.0029s (0m 30s)  41% completed  (74% total)
+     Speed:     ev/sec=1.80401e+06   simsec/sec=13.0136   ev/simsec=138625
+     Messages:  created: 14656395   present: 508   in FES: 296
+sim time: 549.217419209399
+sim time: 549.217419209399
+** Event #74787754   t=1000   Elapsed: 39.3241s (0m 39s)  100% completed  (76% total)
+     Speed:     ev/sec=2.02624e+06   simsec/sec=62.9261   ev/simsec=32200.4
+     Messages:  created: 19604058   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74787754
+
+Calling finish() at end of Run #22...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.0140251, -0.00160085, 0.00472641
+[INFO]	0.0153085, 0.497479, -0.0137776, -0.00477961
+[INFO]	0.009783, -0.0186001, -0.503024, 0.0103093
+[INFO]	0.0085439, -0.00704225, -0.0086627, 0.861662
+[INFO]	DM =              (0.468733,0)   (0.00174572,0.00256589)  (0.00263221,-0.00502307)     (0.250126,0.00809441)
+[INFO]	 (0.00174572,-0.00256589)              (0.035539,0)  (-0.00138617,0.00120562)  (0.00502202,0.000131571)
+[INFO]	  (0.00263221,0.00502307) (-0.00138617,-0.00120562)             (0.0336302,0)  (0.00526684,-0.00176546)
+[INFO]	   (0.250126,-0.00809441) (0.00502202,-0.000131571)   (0.00526684,0.00176546)              (0.462098,0)
+[INFO]	Xerr = 0.0331984
+[INFO]	Zerr = 0.21529 or, 0.21529+0
+[INFO]	Yerr = 0.0359708
+alice<-->QuantumChannel{cost=0.0106879;distance=20km;fidelity=0.715541;bellpair_per_sec=182.743;}<-->bob; Fidelity=0.715541; Xerror=0.0331984; Zerror=0.21529; Yerror=0.0359708
+Closed file to write.
+BSA Statistics (raw):
+    560672 8230 7999 7879
+last BSM message that was sent 549.224816747742
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.0153085, 0.009783, 0.0085439
+[INFO]	0.0140251, 0.497479, -0.0186001, -0.00704225
+[INFO]	-0.00160085, -0.0137776, -0.503024, -0.0086627
+[INFO]	0.00472641, -0.00477961, 0.0103093, 0.861662
+[INFO]	DM =              (0.468733,0)  (0.00263221,-0.00502307)   (0.00174572,0.00256589)     (0.250126,0.00809441)
+[INFO]	  (0.00263221,0.00502307)             (0.0336302,0) (-0.00138617,-0.00120562)  (0.00526684,-0.00176546)
+[INFO]	 (0.00174572,-0.00256589)  (-0.00138617,0.00120562)              (0.035539,0)  (0.00502202,0.000131571)
+[INFO]	   (0.250126,-0.00809441)   (0.00526684,0.00176546) (0.00502202,-0.000131571)              (0.462098,0)
+[INFO]	Xerr = 0.0331984
+[INFO]	Zerr = 0.21529 or, 0.21529+0
+[INFO]	Yerr = 0.0359708
+bob<-->QuantumChannel{cost=0.0106879;distance=20km;fidelity=0.715541;bellpair_per_sec=182.743;}<-->alice; Fidelity=0.715541; Xerror=0.0331984; Zerror=0.21529; Yerror=0.0359708
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #23...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-23-20260331-02:42:37-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (76% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #17829120   t=138.450731855229   Elapsed: 10.0001s (0m 10s)  13% completed  (77% total)
+     Speed:     ev/sec=1.7829e+06   simsec/sec=13.845   ev/simsec=128776
+     Messages:  created: 4673822   present: 509   in FES: 433
+** Event #31060992   t=233.787017521043   Elapsed: 20.0006s (0m 20s)  23% completed  (77% total)
+     Speed:     ev/sec=1.32312e+06   simsec/sec=9.53314   ev/simsec=138792
+     Messages:  created: 8141923   present: 510   in FES: 386
+** Event #47800576   t=354.602648187165   Elapsed: 30.0008s (0m 30s)  35% completed  (77% total)
+     Speed:     ev/sec=1.67392e+06   simsec/sec=12.0813   ev/simsec=138555
+     Messages:  created: 12531533   present: 510   in FES: 325
+** Event #64569600   t=475.640683732872   Elapsed: 40.0009s (0m 40s)  47% completed  (78% total)
+     Speed:     ev/sec=1.67688e+06   simsec/sec=12.1036   ev/simsec=138543
+     Messages:  created: 16928377   present: 509   in FES: 263
+sim time: 547.357280760241
+sim time: 547.357280760241
+** Event #74546909   t=1000   Elapsed: 45.8604s (0m 45s)  100% completed  (80% total)
+     Speed:     ev/sec=1.70277e+06   simsec/sec=89.4824   ev/simsec=19029.1
+     Messages:  created: 19539358   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74546909
+
+Calling finish() at end of Run #23...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00186253, -0.00889408, 0.00993318
+[INFO]	-0.00984479, 0.500843, 0.00762804, -0.00197416
+[INFO]	0.0139251, 0.000179372, -0.503369, -0.00614606
+[INFO]	0.00704353, -0.012736, 0.0087553, 0.868882
+[INFO]	DM =               (0.471465,0)  (-0.00271836,3.46942e-05)  (-0.00295474,-0.00194475)     (0.251053,-0.00195185)
+[INFO]	(-0.00271836,-3.46942e-05)              (0.0320571,0)  (-0.000631599,0.00186217)  (-0.00196766,-0.00501778)
+[INFO]	  (-0.00295474,0.00194475) (-0.000631599,-0.00186217)              (0.0335019,0)    (0.00364963,0.00441235)
+[INFO]	     (0.251053,0.00195185)   (-0.00196766,0.00501778)   (0.00364963,-0.00441235)               (0.462976,0)
+[INFO]	Xerr = 0.0321479
+[INFO]	Zerr = 0.216168 or, 0.216168+0
+[INFO]	Yerr = 0.0334111
+alice<-->QuantumChannel{cost=0.0105706;distance=20km;fidelity=0.718273;bellpair_per_sec=183.366;}<-->bob; Fidelity=0.718273; Xerror=0.0321479; Zerror=0.216168; Yerror=0.0334111
+Closed file to write.
+BSA Statistics (raw):
+    560234 7851 7916 8035
+last BSM message that was sent 547.36025900047
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.00984479, 0.0139251, 0.00704353
+[INFO]	0.00186253, 0.500843, 0.000179372, -0.012736
+[INFO]	-0.00889408, 0.00762804, -0.503369, 0.0087553
+[INFO]	0.00993318, -0.00197416, -0.00614606, 0.868882
+[INFO]	DM =               (0.471465,0)  (-0.00295474,-0.00194475)  (-0.00271836,3.46942e-05)     (0.251053,-0.00195185)
+[INFO]	  (-0.00295474,0.00194475)              (0.0335019,0) (-0.000631599,-0.00186217)    (0.00364963,0.00441235)
+[INFO]	(-0.00271836,-3.46942e-05)  (-0.000631599,0.00186217)              (0.0320571,0)  (-0.00196766,-0.00501778)
+[INFO]	     (0.251053,0.00195185)   (0.00364963,-0.00441235)   (-0.00196766,0.00501778)               (0.462976,0)
+[INFO]	Xerr = 0.0321479
+[INFO]	Zerr = 0.216168 or, 0.216168+0
+[INFO]	Yerr = 0.0334111
+bob<-->QuantumChannel{cost=0.0105706;distance=20km;fidelity=0.718273;bellpair_per_sec=183.366;}<-->alice; Fidelity=0.718273; Xerror=0.0321479; Zerror=0.216168; Yerror=0.0334111
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #24...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-24-20260331-02:43:23-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (80% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #16406016   t=128.472538243571   Elapsed: 10.0003s (0m 10s)  12% completed  (80% total)
+     Speed:     ev/sec=1.64056e+06   simsec/sec=12.8469   ev/simsec=127701
+     Messages:  created: 4302311   present: 510   in FES: 440
+** Event #33679360   t=253.009406983599   Elapsed: 20.0003s (0m 20s)  25% completed  (80% total)
+     Speed:     ev/sec=1.72732e+06   simsec/sec=12.4536   ev/simsec=138701
+     Messages:  created: 8830201   present: 514   in FES: 380
+** Event #52233216   t=386.756759118416   Elapsed: 30.0004s (0m 30s)  38% completed  (81% total)
+     Speed:     ev/sec=1.85538e+06   simsec/sec=13.3747   ev/simsec=138723
+     Messages:  created: 13694361   present: 510   in FES: 310
+** Event #70408448   t=517.976368572484   Elapsed: 40.0005s (0m 40s)  51% completed  (81% total)
+     Speed:     ev/sec=1.81751e+06   simsec/sec=13.1218   ev/simsec=138510
+     Messages:  created: 18460384   present: 511   in FES: 245
+sim time: 549.376319781585
+sim time: 549.376319781585
+** Event #74796770   t=1000   Elapsed: 42.3396s (0m 42s)  100% completed  (83% total)
+     Speed:     ev/sec=1.87606e+06   simsec/sec=206.026   ev/simsec=9105.93
+     Messages:  created: 19606344   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74796770
+
+Calling finish() at end of Run #24...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00439265, 0.00169205, 0.0204852
+[INFO]	0.00815778, 0.477364, -0.00633081, -0.0138265
+[INFO]	0.0109538, -0.00569434, -0.493276, -0.00746269
+[INFO]	0.00862534, 0.00705168, -0.0175502, 0.855885
+[INFO]	DM =               (0.471249,0)    (0.00286108,0.00396454) (-0.00141719,-0.000872773)       (0.24266,0.00300629)
+[INFO]	  (0.00286108,-0.00396454)              (0.0330638,0) (-0.00397798,-0.000159116)   (0.00549608,-0.00460412)
+[INFO]	 (-0.00141719,0.000872773)  (-0.00397798,0.000159116)              (0.0389937,0) (-0.000664758,-0.00481056)
+[INFO]	     (0.24266,-0.00300629)    (0.00549608,0.00460412)  (-0.000664758,0.00481056)               (0.456694,0)
+[INFO]	Xerr = 0.0320508
+[INFO]	Zerr = 0.221311 or, 0.221311+0
+[INFO]	Yerr = 0.0400067
+alice<-->QuantumChannel{cost=0.0109623;distance=20km;fidelity=0.706631;bellpair_per_sec=182.69;}<-->bob; Fidelity=0.706631; Xerror=0.0320508; Zerror=0.221311; Yerror=0.0400067
+Closed file to write.
+BSA Statistics (raw):
+    561250 8067 8095 8108
+last BSM message that was sent 549.379298014814
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00815778, 0.0109538, 0.00862534
+[INFO]	0.00439265, 0.477364, -0.00569434, 0.00705168
+[INFO]	0.00169205, -0.00633081, -0.493276, -0.0175502
+[INFO]	0.0204852, -0.0138265, -0.00746269, 0.855885
+[INFO]	DM =               (0.471249,0) (-0.00141719,-0.000872773)    (0.00286108,0.00396454)       (0.24266,0.00300629)
+[INFO]	 (-0.00141719,0.000872773)              (0.0389937,0)  (-0.00397798,0.000159116) (-0.000664758,-0.00481056)
+[INFO]	  (0.00286108,-0.00396454) (-0.00397798,-0.000159116)              (0.0330638,0)   (0.00549608,-0.00460412)
+[INFO]	     (0.24266,-0.00300629)  (-0.000664758,0.00481056)    (0.00549608,0.00460412)               (0.456694,0)
+[INFO]	Xerr = 0.0320508
+[INFO]	Zerr = 0.221311 or, 0.221311+0
+[INFO]	Yerr = 0.0400067
+bob<-->QuantumChannel{cost=0.0109623;distance=20km;fidelity=0.706631;bellpair_per_sec=182.69;}<-->alice; Fidelity=0.706631; Xerror=0.0320508; Zerror=0.221311; Yerror=0.0400067
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #25...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-25-20260331-02:44:05-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (83% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18785536   t=145.356647187526   Elapsed: 10.0001s (0m 10s)  14% completed  (83% total)
+     Speed:     ev/sec=1.87854e+06   simsec/sec=14.5356   ev/simsec=129238
+     Messages:  created: 4924189   present: 510   in FES: 430
+** Event #35294976   t=264.472387525102   Elapsed: 20.0002s (0m 20s)  26% completed  (84% total)
+     Speed:     ev/sec=1.65093e+06   simsec/sec=11.9115   ev/simsec=138600
+     Messages:  created: 9253505   present: 512   in FES: 372
+** Event #49357056   t=365.945535482918   Elapsed: 30.0002s (0m 30s)  36% completed  (84% total)
+     Speed:     ev/sec=1.40621e+06   simsec/sec=10.1473   ev/simsec=138579
+     Messages:  created: 12940917   present: 510   in FES: 320
+** Event #65251328   t=480.621901222563   Elapsed: 40.0002s (0m 40s)  48% completed  (84% total)
+     Speed:     ev/sec=1.58941e+06   simsec/sec=11.4675   ev/simsec=138601
+     Messages:  created: 17108105   present: 510   in FES: 262
+sim time: 551.006273628979
+sim time: 551.006273628979
+** Event #75042586   t=1000   Elapsed: 45.2255s (0m 45s)  100% completed  (86% total)
+     Speed:     ev/sec=1.87383e+06   simsec/sec=99.3712   ev/simsec=18856.9
+     Messages:  created: 19670762   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #75042586
+
+Calling finish() at end of Run #25...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00090269, 0.00179791, -0.00653474
+[INFO]	0, 0.500451, -0.00411302, 0.00785101
+[INFO]	0.00179791, -0.0021303, -0.503056, 0.00133773
+[INFO]	-0.00322135, -0.00313536, 0.00475208, 0.868569
+[INFO]	DM =                (0.464703,0)   (-0.000558167,-0.0016375)   (0.00196275,-0.000783912)       (0.250877,0.00156083)
+[INFO]	   (-0.000558167,0.0016375)               (0.0336861,0) (-0.000651277,-0.000495679)  (-0.00196275,-0.000115045)
+[INFO]	   (0.00196275,0.000783912)  (-0.000651277,0.000495679)               (0.0320295,0)    (0.00100951,0.000738543)
+[INFO]	     (0.250877,-0.00156083)   (-0.00196275,0.000115045)   (0.00100951,-0.000738543)                (0.469581,0)
+[INFO]	Xerr = 0.0322065
+[INFO]	Zerr = 0.216265 or, 0.216265+0
+[INFO]	Yerr = 0.0335091
+alice<-->QuantumChannel{cost=0.0106489;distance=20km;fidelity=0.718019;bellpair_per_sec=182.147;}<-->bob; Fidelity=0.718019; Xerror=0.0322065; Zerror=0.216265; Yerror=0.0335091
+Closed file to write.
+BSA Statistics (raw):
+    563701 8184 8160 8043
+last BSM message that was sent 551.00905972829
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 5.55112e-17, 0.00179791, -0.00322135
+[INFO]	0.00090269, 0.500451, -0.0021303, -0.00313536
+[INFO]	0.00179791, -0.00411302, -0.503056, 0.00475208
+[INFO]	-0.00653474, 0.00785101, 0.00133773, 0.868569
+[INFO]	DM =                (0.464703,0)   (0.00196275,-0.000783912)   (-0.000558167,-0.0016375)       (0.250877,0.00156083)
+[INFO]	   (0.00196275,0.000783912)               (0.0320295,0)  (-0.000651277,0.000495679)    (0.00100951,0.000738543)
+[INFO]	   (-0.000558167,0.0016375) (-0.000651277,-0.000495679)               (0.0336861,0)  (-0.00196275,-0.000115045)
+[INFO]	     (0.250877,-0.00156083)   (0.00100951,-0.000738543)   (-0.00196275,0.000115045)                (0.469581,0)
+[INFO]	Xerr = 0.0322065
+[INFO]	Zerr = 0.216265 or, 0.216265+0
+[INFO]	Yerr = 0.0335091
+bob<-->QuantumChannel{cost=0.0106489;distance=20km;fidelity=0.718019;bellpair_per_sec=182.147;}<-->alice; Fidelity=0.718019; Xerror=0.0322065; Zerror=0.216265; Yerror=0.0335091
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #26...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-26-20260331-02:44:51-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (86% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #17715456   t=137.897740313225   Elapsed: 10.0001s (0m 10s)  13% completed  (87% total)
+     Speed:     ev/sec=1.77153e+06   simsec/sec=13.7896   ev/simsec=128468
+     Messages:  created: 4645361   present: 512   in FES: 436
+** Event #36973824   t=276.698939801737   Elapsed: 20.0002s (0m 20s)  27% completed  (87% total)
+     Speed:     ev/sec=1.92582e+06   simsec/sec=13.88   ev/simsec=138748
+     Messages:  created: 9693817   present: 510   in FES: 364
+** Event #55971072   t=413.673912777118   Elapsed: 30.0002s (0m 30s)  41% completed  (88% total)
+     Speed:     ev/sec=1.89972e+06   simsec/sec=13.6974   ev/simsec=138691
+     Messages:  created: 14673817   present: 510   in FES: 296
+** Event #70432768   t=517.935251697032   Elapsed: 40.0003s (0m 40s)  51% completed  (88% total)
+     Speed:     ev/sec=1.44616e+06   simsec/sec=10.426   ev/simsec=138706
+     Messages:  created: 18465079   present: 510   in FES: 244
+sim time: 547.374573210861
+sim time: 547.374573210861
+** Event #74541781   t=1000   Elapsed: 42.2228s (0m 42s)  100% completed  (90% total)
+     Speed:     ev/sec=1.84888e+06   simsec/sec=216.897   ev/simsec=8524.21
+     Messages:  created: 19538420   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74541781
+
+Calling finish() at end of Run #26...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.00371007, -0.0108382, 0.00987022
+[INFO]	0.00153832, 0.504841, -0.00843997, -0.00585322
+[INFO]	-0.00343208, -0.00141844, -0.495845, 0.0144669
+[INFO]	0.0113325, 0.00527398, 0.00358873, 0.866935
+[INFO]	DM =               (0.472034,0)    (0.00224601,0.00181235)   (-0.00107872,-0.0027587)       (0.250172,0.0024646)
+[INFO]	  (0.00224601,-0.00181235)              (0.0336319,0)   (0.00224895,-0.00175538)    (0.00184789,0.00447474)
+[INFO]	   (-0.00107872,0.0027587)    (0.00224895,0.00175538)              (0.0329007,0)  (-0.000390977,0.00360672)
+[INFO]	     (0.250172,-0.0024646)   (0.00184789,-0.00447474) (-0.000390977,-0.00360672)               (0.461433,0)
+[INFO]	Xerr = 0.0355153
+[INFO]	Zerr = 0.216562 or, 0.216562+0
+[INFO]	Yerr = 0.0310174
+alice<-->QuantumChannel{cost=0.0106114;distance=20km;fidelity=0.716905;bellpair_per_sec=183.36;}<-->bob; Fidelity=0.716905; Xerror=0.0355153; Zerror=0.216562; Yerror=0.0310174
+Closed file to write.
+BSA Statistics (raw):
+    559446 7965 8075 7946
+last BSM message that was sent 547.376398586582
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00153832, -0.00343208, 0.0113325
+[INFO]	0.00371007, 0.504841, -0.00141844, 0.00527398
+[INFO]	-0.0108382, -0.00843997, -0.495845, 0.00358873
+[INFO]	0.00987022, -0.00585322, 0.0144669, 0.866935
+[INFO]	DM =               (0.472034,0)   (-0.00107872,-0.0027587)    (0.00224601,0.00181235)       (0.250172,0.0024646)
+[INFO]	   (-0.00107872,0.0027587)              (0.0329007,0)    (0.00224895,0.00175538)  (-0.000390977,0.00360672)
+[INFO]	  (0.00224601,-0.00181235)   (0.00224895,-0.00175538)              (0.0336319,0)    (0.00184789,0.00447474)
+[INFO]	     (0.250172,-0.0024646) (-0.000390977,-0.00360672)   (0.00184789,-0.00447474)               (0.461433,0)
+[INFO]	Xerr = 0.0355153
+[INFO]	Zerr = 0.216562 or, 0.216562+0
+[INFO]	Yerr = 0.0310174
+bob<-->QuantumChannel{cost=0.0106114;distance=20km;fidelity=0.716905;bellpair_per_sec=183.36;}<-->alice; Fidelity=0.716905; Xerror=0.0355153; Zerror=0.216562; Yerror=0.0310174
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #27...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-27-20260331-02:45:33-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (90% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #18342656   t=142.18205727333   Elapsed: 10.0001s (0m 10s)  14% completed  (90% total)
+     Speed:     ev/sec=1.83425e+06   simsec/sec=14.2181   ev/simsec=129008
+     Messages:  created: 4808743   present: 512   in FES: 434
+** Event #36821760   t=275.484115072682   Elapsed: 20.0001s (0m 20s)  27% completed  (90% total)
+     Speed:     ev/sec=1.8479e+06   simsec/sec=13.3302   ev/simsec=138626
+     Messages:  created: 9652967   present: 510   in FES: 365
+** Event #54767104   t=404.955028962032   Elapsed: 30.0002s (0m 30s)  40% completed  (91% total)
+     Speed:     ev/sec=1.79452e+06   simsec/sec=12.947   ev/simsec=138605
+     Messages:  created: 14357529   present: 510   in FES: 300
+** Event #70562048   t=518.903267472916   Elapsed: 40.0011s (0m 40s)  51% completed  (91% total)
+     Speed:     ev/sec=1.57935e+06   simsec/sec=11.3938   ev/simsec=138615
+     Messages:  created: 18498217   present: 510   in FES: 243
+sim time: 546.194042697669
+sim time: 546.194042697669
+** Event #74374771   t=1000   Elapsed: 43.9621s (0m 43s)  100% completed  (93% total)
+     Speed:     ev/sec=962558   simsec/sec=121.364   ev/simsec=7931.15
+     Messages:  created: 19493318   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74374771
+
+Calling finish() at end of Run #27...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.00301205, -0.0120482, -0.0196754
+[INFO]	0.000177179, 0.482636, -0.0183037, -0.00522805
+[INFO]	-0.00161841, 0.00447693, -0.491099, 0.0109772
+[INFO]	-0.018406, 0.00259137, 0.0133454, 0.863814
+[INFO]	DM =               (0.456433,0) (-0.00010517,-0.000324291)  (-0.00126272,-0.00233971)       (0.243434,0.0034567)
+[INFO]	 (-0.00010517,0.000324291)              (0.0343639,0)  (-0.00211557,-0.00569517)    (0.00135131,0.00314891)
+[INFO]	  (-0.00126272,0.00233971)   (-0.00211557,0.00569517)              (0.0337293,0)   (-0.00140085,0.00634839)
+[INFO]	     (0.243434,-0.0034567)   (0.00135131,-0.00314891)  (-0.00140085,-0.00634839)               (0.475474,0)
+[INFO]	Xerr = 0.031931
+[INFO]	Zerr = 0.22252 or, 0.22252+0
+[INFO]	Yerr = 0.0361622
+alice<-->QuantumChannel{cost=0.010814;distance=20km;fidelity=0.709387;bellpair_per_sec=183.758;}<-->bob; Fidelity=0.709387; Xerror=0.031931; Zerror=0.22252; Yerror=0.0361622
+Closed file to write.
+BSA Statistics (raw):
+    560066 7955 7886 8081
+last BSM message that was sent 546.197405218734
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.000177179, -0.00161841, -0.018406
+[INFO]	-0.00301205, 0.482636, 0.00447693, 0.00259137
+[INFO]	-0.0120482, -0.0183037, -0.491099, 0.0133454
+[INFO]	-0.0196754, -0.00522805, 0.0109772, 0.863814
+[INFO]	DM =               (0.456433,0)  (-0.00126272,-0.00233971) (-0.00010517,-0.000324291)       (0.243434,0.0034567)
+[INFO]	  (-0.00126272,0.00233971)              (0.0337293,0)   (-0.00211557,0.00569517)   (-0.00140085,0.00634839)
+[INFO]	 (-0.00010517,0.000324291)  (-0.00211557,-0.00569517)              (0.0343639,0)    (0.00135131,0.00314891)
+[INFO]	     (0.243434,-0.0034567)  (-0.00140085,-0.00634839)   (0.00135131,-0.00314891)               (0.475474,0)
+[INFO]	Xerr = 0.031931
+[INFO]	Zerr = 0.22252 or, 0.22252+0
+[INFO]	Yerr = 0.0361622
+bob<-->QuantumChannel{cost=0.010814;distance=20km;fidelity=0.709387;bellpair_per_sec=183.758;}<-->alice; Fidelity=0.709387; Xerror=0.031931; Zerror=0.22252; Yerror=0.0361622
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #28...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-28-20260331-02:46:17-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (93% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #17100032   t=133.444917235034   Elapsed: 10.0001s (0m 10s)  13% completed  (93% total)
+     Speed:     ev/sec=1.70998e+06   simsec/sec=13.3443   ev/simsec=128143
+     Messages:  created: 4484025   present: 510   in FES: 436
+** Event #33660160   t=252.886916350374   Elapsed: 20.0002s (0m 20s)  25% completed  (94% total)
+     Speed:     ev/sec=1.656e+06   simsec/sec=11.9441   ev/simsec=138646
+     Messages:  created: 8825819   present: 510   in FES: 376
+** Event #52118272   t=386.074649416516   Elapsed: 30.0003s (0m 30s)  38% completed  (94% total)
+     Speed:     ev/sec=1.8458e+06   simsec/sec=13.3187   ev/simsec=138587
+     Messages:  created: 13665357   present: 509   in FES: 307
+** Event #69774592   t=513.479927939907   Elapsed: 40.0004s (0m 40s)  51% completed  (95% total)
+     Speed:     ev/sec=1.76562e+06   simsec/sec=12.7404   ev/simsec=138584
+     Messages:  created: 18294711   present: 512   in FES: 248
+sim time: 550.119720228327
+sim time: 550.119720228327
+** Event #74878950   t=1000   Elapsed: 42.8744s (0m 42s)  100% completed  (96% total)
+     Speed:     ev/sec=1.77603e+06   simsec/sec=169.214   ev/simsec=10495.7
+     Messages:  created: 19628718   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74878950
+
+Calling finish() at end of Run #28...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, 0.000268745, -0.00878516, 0.00634892
+[INFO]	0.00223954, 0.507122, 0.0155625, 0.00571633
+[INFO]	0.000266217, 0.00264864, -0.488153, 0.0012718
+[INFO]	0.0104623, -0.00725236, -0.00937444, 0.864616
+[INFO]	DM =                (0.470357,0)      (-0.0017459,0.0045399)   (0.00198897,-0.000384505)      (0.248819,-0.00455278)
+[INFO]	    (-0.0017459,-0.0045399)               (0.0348744,0)      (0.0047421,0.00322846)  (-0.000869196,0.000251396)
+[INFO]	   (0.00198897,0.000384505)     (0.0047421,-0.00322846)               (0.0328177,0)   (0.00188028,-0.000147318)
+[INFO]	      (0.248819,0.00455278) (-0.000869196,-0.000251396)    (0.00188028,0.000147318)                (0.461951,0)
+[INFO]	Xerr = 0.0385881
+[INFO]	Zerr = 0.217335 or, 0.217335+0
+[INFO]	Yerr = 0.0291039
+alice<-->QuantumChannel{cost=0.0107225;distance=20km;fidelity=0.714973;bellpair_per_sec=182.442;}<-->bob; Fidelity=0.714973; Xerror=0.0385881; Zerror=0.217335; Yerror=0.0291039
+Closed file to write.
+BSA Statistics (raw):
+    561526 8055 8138 8013
+last BSM message that was sent 550.121545601048
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, 0.00223954, 0.000266217, 0.0104623
+[INFO]	0.000268745, 0.507122, 0.00264864, -0.00725236
+[INFO]	-0.00878516, 0.0155625, -0.488153, -0.00937444
+[INFO]	0.00634892, 0.00571633, 0.0012718, 0.864616
+[INFO]	DM =                (0.470357,0)   (0.00198897,-0.000384505)      (-0.0017459,0.0045399)      (0.248819,-0.00455278)
+[INFO]	   (0.00198897,0.000384505)               (0.0328177,0)     (0.0047421,-0.00322846)   (0.00188028,-0.000147318)
+[INFO]	    (-0.0017459,-0.0045399)      (0.0047421,0.00322846)               (0.0348744,0)  (-0.000869196,0.000251396)
+[INFO]	      (0.248819,0.00455278)    (0.00188028,0.000147318) (-0.000869196,-0.000251396)                (0.461951,0)
+[INFO]	Xerr = 0.0385881
+[INFO]	Zerr = 0.217335 or, 0.217335+0
+[INFO]	Yerr = 0.0291039
+bob<-->QuantumChannel{cost=0.0107225;distance=20km;fidelity=0.714973;bellpair_per_sec=182.442;}<-->alice; Fidelity=0.714973; Xerror=0.0385881; Zerror=0.217335; Yerror=0.0291039
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Preparing for running configuration purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92, run #29...
+Assigned runID=purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92-29-20260331-02:47:00-197470
+Setting up network "networks.cross_validation_purification"...
+Initializing...
+raw rate given: 1000000000
+interval in attosecond 1000000000 atto.s
+time interval: 0.000000001
+
+Running simulation...
+** Event #0   t=0   Elapsed: 3e-06s (0m 00s)  0% completed  (96% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 511   present: 510   in FES: 503
+** Event #19764736   t=152.570663553836   Elapsed: 10s (0m 10s)  15% completed  (97% total)
+     Speed:     ev/sec=1.97647e+06   simsec/sec=15.257   ev/simsec=129545
+     Messages:  created: 5181997   present: 510   in FES: 426
+** Event #39214848   t=292.864142005995   Elapsed: 20.0002s (0m 20s)  29% completed  (97% total)
+     Speed:     ev/sec=1.94499e+06   simsec/sec=14.0292   ev/simsec=138639
+     Messages:  created: 10281203   present: 510   in FES: 356
+** Event #53701376   t=397.296776474306   Elapsed: 30.0009s (0m 30s)  39% completed  (97% total)
+     Speed:     ev/sec=1.44855e+06   simsec/sec=10.4425   ev/simsec=138716
+     Messages:  created: 14078773   present: 510   in FES: 304
+** Event #73884672   t=543.133680906224   Elapsed: 40.0009s (0m 40s)  54% completed  (98% total)
+     Speed:     ev/sec=2.01833e+06   simsec/sec=14.5837   ev/simsec=138396
+     Messages:  created: 19371973   present: 510   in FES: 231
+sim time: 549.295810722943
+sim time: 549.295810722943
+** Event #74775684   t=1000   Elapsed: 40.5487s (0m 40s)  100% completed  (100% total)
+     Speed:     ev/sec=1.62654e+06   simsec/sec=833.673   ev/simsec=1951.06
+     Messages:  created: 19601064   present: 508   in FES: 1
+
+<!> Simulation time limit reached -- at t=1000s, event #74775684
+
+Calling finish() at end of Run #29...
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 1
+[INFO]	1, -0.0120611, -0.00527177, -0.0220484
+[INFO]	-0.0127758, 0.487179, -0.00661305, 0.00135906
+[INFO]	-0.00254499, 0.0138689, -0.493728, 0.00345895
+[INFO]	-0.0190256, -0.00115978, 0.00480464, 0.867888
+[INFO]	DM =               (0.456703,0)  (-0.00330522,0.000116782) (-0.00285419,-0.000228489)     (0.245227,-0.00181396)
+[INFO]	(-0.00330522,-0.000116782)              (0.0337838,0)  (-0.00163723,-0.00512048)   (-0.00353373,0.00150098)
+[INFO]	 (-0.00285419,0.000228489)   (-0.00163723,0.00512048)              (0.0322724,0)    (-0.00272533,0.0025191)
+[INFO]	     (0.245227,0.00181396)  (-0.00353373,-0.00150098)   (-0.00272533,-0.0025191)                (0.47724,0)
+[INFO]	Xerr = 0.0313909
+[INFO]	Zerr = 0.221745 or, 0.221745+0
+[INFO]	Yerr = 0.0346653
+alice<-->QuantumChannel{cost=0.0107899;distance=20km;fidelity=0.712199;bellpair_per_sec=182.717;}<-->bob; Fidelity=0.712199; Xerror=0.0313909; Zerror=0.221745; Yerror=0.0346653
+Closed file to write.
+BSA Statistics (raw):
+    560948 7955 8064 8149
+last BSM message that was sent 549.298404671336
+[INFO]	Finishing Hardware Monitor
+default!=results/purification_validation_with_9728_coherence_for_100000_pairs_with_link_fidelity_92.output
+Opened new file to write. Address is 3
+[INFO]	1, -0.0127758, -0.00254499, -0.0190256
+[INFO]	-0.0120611, 0.487179, 0.0138689, -0.00115978
+[INFO]	-0.00527177, -0.00661305, -0.493728, 0.00480464
+[INFO]	-0.0220484, 0.00135906, 0.00345895, 0.867888
+[INFO]	DM =               (0.456703,0) (-0.00285419,-0.000228489)  (-0.00330522,0.000116782)     (0.245227,-0.00181396)
+[INFO]	 (-0.00285419,0.000228489)              (0.0322724,0)   (-0.00163723,0.00512048)    (-0.00272533,0.0025191)
+[INFO]	(-0.00330522,-0.000116782)  (-0.00163723,-0.00512048)              (0.0337838,0)   (-0.00353373,0.00150098)
+[INFO]	     (0.245227,0.00181396)   (-0.00272533,-0.0025191)  (-0.00353373,-0.00150098)                (0.47724,0)
+[INFO]	Xerr = 0.0313909
+[INFO]	Zerr = 0.221745 or, 0.221745+0
+[INFO]	Yerr = 0.0346653
+bob<-->QuantumChannel{cost=0.0107899;distance=20km;fidelity=0.712199;bellpair_per_sec=182.717;}<-->alice; Fidelity=0.712199; Xerror=0.0313909; Zerror=0.221745; Yerror=0.0346653
+Closed file to write.
+undisposed object: (omnetpp::cTopology) cross_validation_purification.alice.router.topo -- check module destructor
+
+Run statistics: total 30, successful 30
+
+End.
