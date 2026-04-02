@@ -296,7 +296,7 @@ def get_analytical_fidelity_for_entanglement_swap_experiment(
         0.5 * photon_arrival_probability_from_km_distance(L_HALF_M_SWAP // 1000) ** 2
     )
 
-    if t_coh != 0:
+    if t_coh != 0 and not with_deterministic_link:
         fidelity_mem = 0
         t_round = round(10 * T_SEP_S * 1_000_000 + t)
         for i in range(20):
@@ -312,6 +312,8 @@ def get_analytical_fidelity_for_entanglement_swap_experiment(
                 t_coh,
             )
             fidelity_mem += p_link * (1 - p_link) ** i * f_stale
+    elif t_coh != 0 and with_deterministic_link:
+        fidelity_mem = get_fidelity_decay_factor_from_decoherence(6 * t, t_coh)
 
     f_total = (
         fidelity_mem * fidelity_swap + ((1 - fidelity_mem) * (1 - fidelity_swap)) / 3.0
@@ -420,8 +422,9 @@ def extract_purification_success(fn: str, target_count: int, num_memories: int =
 
 
 ######################### LOG EXTRACTION TO CSV #########################
+
 experiment_0_file_pattern = re.compile(
-    r"swapping_validation_cnot_(\d+)_meas_(\d+)_with_(\d+|inf)_coherence_time_for_(\d+)_pairs"
+    r"swapping_validation_cnot_(\d+)_meas_(\d+)_with_(\d+|inf)_coherence_time_for_(\d+)_pairs(.*)"
 )
 experiment_1_file_pattern = re.compile(
     r"cross_validation_mim_link_imbalanced_10km_10km_(\d+)_memories_for_(\d+)"
@@ -430,7 +433,7 @@ experiment_2_file_pattern = re.compile(
     r"cross_validation_mim_link_imbalanced_(\d+)km_(\d+)km_1_memories_for_(\d+)"
 )
 experiment_3_file_pattern = re.compile(
-    r"swapping_validation_cnot_(\d+)_meas_(\d+)_with_(\d+|inf)_coherence_time_for_(\d+)_pairs"
+    r"swapping_validation_cnot_(\d+|unit)_meas_(\d+|unit)_with_(\d+|inf)_coherence_time_for_(\d+)_pairs"
 )
 experiment_4_file_pattern = re.compile(
     r"purification_validation_with_(\d+|inf)_coherence_for_(\d+)_pairs_with_link_fidelity_(\d+|unit)"
@@ -507,8 +510,8 @@ for fn in os.listdir(exp_3_base_path):
     p_cnot, p_meas, coh_time, num_pairs = match.groups()
     # correcting the data from file name
     coh_time = int(coh_time) if coh_time != "inf" else 0
-    p_cnot = float(f"0.{p_cnot}")
-    p_meas = float(f"0.{p_meas}")
+    p_cnot = float(f"0.{p_cnot}") if p_cnot != 'unit' else 1
+    p_meas = float(f"0.{p_meas}") if p_meas != 'unit' else 1
     num_pairs = int(num_pairs)
 
     mu, sigma = extract_fidelity(os.path.join(exp_3_base_path, fn.lstrip("/")))
@@ -539,30 +542,32 @@ for fn in os.listdir(exp_0_base_path):
     if match is None:
         continue
         # raise RuntimeError("cannot find files for exp 1 to extract.")
-    p_cnot, p_meas, coh_time, num_pairs = match.groups()
+    p_cnot, p_meas, coh_time, num_pairs, is_deterministic = match.groups()
     # correcting the data from file name
     coh_time = int(coh_time) if coh_time != "inf" else 0
-    p_cnot = float(f"0.{p_cnot}")
-    p_meas = float(f"0.{p_meas}")
+    p_cnot = float(f"0.{p_cnot}") if p_cnot != 'unit' else 1
+    p_meas = float(f"0.{p_meas}") if p_meas != 'unit' else 1
     num_pairs = int(num_pairs)
+    is_deterministic = (is_deterministic == '_deterministic')
 
     mu, sigma = extract_fidelity(os.path.join(exp_0_base_path, fn.lstrip("/")))
     exp_0_data.append(
         {
             "num_bellpairs": num_pairs,
+            "deterministic": is_deterministic,
             "cnot_err_prob": p_cnot,
             "meas_err_prob": p_meas,
             "coherence_time": coh_time,
             "fidelity_mean": mu,
             "fidelity_std": sigma,
             "fidelity_analytical": get_analytical_fidelity_for_entanglement_swap_experiment(
-                p_cnot, p_meas, coh_time
+                p_cnot, p_meas, coh_time, is_deterministic
             ),
         }
     )
 df_exp0 = pd.DataFrame(exp_0_data)
 df_exp0.sort_values(
-    ["num_bellpairs", "coherence_time", "cnot_err_prob", "meas_err_prob"]
+    ["num_bellpairs", "deterministic", "coherence_time", "cnot_err_prob", "meas_err_prob"]
 ).to_csv(f"{os.path.dirname(__file__)}/exp0.csv", index=False)
 
 
@@ -579,10 +584,7 @@ for fn in os.listdir(exp_4_base_path):
     # correcting the data from file name
     coh_time = int(coh_time) if coh_time != "inf" else 0
     num_pairs = int(num_pairs)
-    if link_fidelity != "unit":
-        link_fidelity = float(f"0.{link_fidelity}")
-    else:
-        link_fidelity = 1.0
+    link_fidelity = float(f"0.{link_fidelity}") if link_fidelity != "unit" else 1.0
 
     f_mu, f_sigma = extract_fidelity(os.path.join(exp_4_base_path, fn.lstrip("/")))
     t_mu, t_sigma = extract_completion_time(
